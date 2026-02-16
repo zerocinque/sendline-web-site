@@ -50,7 +50,7 @@ export default async function LocaleLayout({
             resistance={750}
             returnDuration={1.5}
           />
-          15        </div>
+        </div>
         <NextIntlClientProvider messages={messages}>
           <div className="relative z-10">
             <Header />
