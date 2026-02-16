@@ -14,7 +14,9 @@ import {
   SiMongodb,
   SiGraphql,
   SiGrafana,
-  SiN8N
+  SiN8N,
+  SiRedis,
+  SiNodedotjs
 } from "react-icons/si";
 import LogoLoop from "../LogoLoop";
 
@@ -33,6 +35,8 @@ const techLogos = [
   { node: <SiGraphql />, title: "Graphql" },
   { node: <SiGrafana />, title: "Grafana" },
   { node: <SiN8N />, title: "n8n" },
+  { node: <SiRedis />, title: "Redis" },
+  { node: <SiNodedotjs />, title: "Nodejs" },
 ];
 
 export default function TechLogos() {

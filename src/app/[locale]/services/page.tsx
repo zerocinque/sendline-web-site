@@ -2,6 +2,21 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import {
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiDotnet,
+  SiPython,
+  SiPostgresql,
+  SiCloudflare,
+  SiDocker,
+  SiGithubactions,
+  SiRaspberrypi,
+  SiMqtt,
+  SiIota,
+  SiServerfault
+} from "react-icons/si";
 
 function CheckIcon() {
   return (
@@ -53,24 +68,28 @@ function ServiceCard({
 
 const techStack = {
   frontend: [
-    { name: "React / Next.js", icon: "⚛" },
-    { name: "TailwindCSS", icon: "🎨" },
-    { name: "TypeScript", icon: "📘" },
+    { name: "React / Next.js", icon: <SiReact /> },
+    { name: "TailwindCSS", icon: <SiTailwindcss /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "Vuejs", icon: <SiTypescript /> },
   ],
   backend: [
-    { name: "Node.js / Express", icon: "🟢" },
-    { name: "Python / FastAPI", icon: "🐍" },
-    { name: "PostgreSQL / Redis", icon: "🗄" },
+    { name: ".Net Core Framework", icon: <SiDotnet /> },
+    { name: "Nodejs / express", icon: <SiDotnet /> },
+    { name: "Python / FastAPI", icon: <SiPython /> },
+    { name: "PostgreSQL / MySQL / SQL server", icon: <SiPostgresql /> },
+    { name: "Redis", icon: <SiPostgresql /> },
+    { name: "MongoDB / Qdrant", icon: <SiPostgresql /> },
   ],
   devops: [
-    { name: "AWS Services", icon: "☁" },
-    { name: "Docker & K8s", icon: "🐳" },
-    { name: "CI/CD Pipelines", icon: "🔄" },
+    { name: "Cloudflare", icon: <SiCloudflare /> },
+    { name: "Docker", icon: <SiDocker /> },
+    { name: "CI/CD Pipelines", icon: <SiGithubactions /> },
+    { name: "Servers on prem", icon: <SiServerfault /> },
   ],
   iot: [
-    { name: "Raspberry Pi / Arduino", icon: "🔧" },
-    { name: "MQTT Brokers", icon: "📡" },
-    { name: "LoRaWAN", icon: "📶" },
+    { name: "MQTT Brokers", icon: <SiMqtt /> },
+    { name: "LoRaWAN", icon: <SiIota /> },
   ],
 };
 
