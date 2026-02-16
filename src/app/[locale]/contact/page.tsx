@@ -151,7 +151,7 @@ export default function ContactPage() {
               className="rounded-2xl border border-border bg-surface p-8"
             >
               <h2 className="mb-8 font-mono text-lg font-bold tracking-wider text-white">
-                <span className="text-primary">//</span> {t("form.title").replace("// ", "")}
+                <span className="text-primary">{'//'}</span> {t("form.title").replace("// ", "")}
               </h2>
 
               <div className="space-y-6">

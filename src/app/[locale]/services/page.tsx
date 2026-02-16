@@ -1,5 +1,15 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+// import LetterGlitch from '@components/LetterGlitch';
+  
+// <LetterGlitch
+//   glitchSpeed={50}
+//   centerVignette={true}
+//   outerVignette={false}
+//   smooth={true}
+// />
 
 function CheckIcon() {
   return (
