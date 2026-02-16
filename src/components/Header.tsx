@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -23,9 +24,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+          <Image src="/Triangle_gradient_white_gray_TBG.svg" alt="SendLine logo" width={20} height={16} />
           <span className="text-lg font-bold tracking-wider text-white">
-            SENDLINE
+            SendLine
           </span>
         </Link>
 

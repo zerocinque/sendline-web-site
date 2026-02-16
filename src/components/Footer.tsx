@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,9 +12,9 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="mb-4 flex items-center gap-2">
-              <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+              <Image src="/Triangle_gradient_white_gray_TBG.svg" alt="SendLine logo" width={20} height={16} />
               <span className="text-lg font-bold tracking-wider text-white">
-                SENDLINE
+                Sendline
               </span>
             </div>
             <p className="max-w-sm text-sm text-muted">{t("description")}</p>
