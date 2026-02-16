@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "startProject": "Start Project"
+  },
+  "hero": {
+    "badge": "TECHNICAL PORTFOLIO",
+    "title1": "Architecting",
+    "title2": "Digital",
+    "title3": "Intelligence",
+    "description": "Specializing in high-performance white-label solutions, AI automation, and IoT architectures. Building the backbone of modern tech infrastructure.",
+    "viewPortfolio": "View Portfolio",
+    "contactUs": "Contact Us"
+  },
+  "techLogos": {
+    "title": "Technologies we use"
+  },
+  "specializations": {
+    "badge": "CORE COMPETENCIES",
+    "title": "Technical Specializations",
+    "ai": {
+      "title": "AI Automation",
+      "description": "Custom machine learning pipelines and intelligent automation solutions to optimize business workflows."
+    },
+    "erp": {
+      "title": "ERP & BI Integrations",
+      "description": "Seamless integration with leading ERP systems and platforms for advanced data analytics."
+    },
+    "iot": {
+      "title": "IoT & Sensor Monitoring",
+      "description": "Real-time monitoring of IoT devices and sensors for industrial control and automation."
+    }
+  },
+  "projects": {
+    "badge": "SELECTED WORKS",
+    "title": "Featured Projects",
+    "viewAll": "View All",
+    "items": {
+      "factory": {
+        "title": "Smart Factory Dashboard",
+        "description": "Real-time dashboard for manufacturing production monitoring, efficiency management and predictive analytics.",
+        "tags": "React,Node.js,IoT,AWS"
+      },
+      "supplychain": {
+        "title": "Supply Chain AI",
+        "description": "AI-powered logistics intelligence platform for supply chain optimization.",
+        "tags": "Python,TensorFlow,AWS,Docker"
+      },
+      "crm": {
+        "title": "White Label CRM",
+        "description": "Fully customizable white-label CRM for agencies and SaaS resellers.",
+        "tags": "Next.js,PostgreSQL,Stripe,Redis"
+      },
+      "stealth": {
+        "title": "Project Stealth",
+        "description": "Confidential project under development. Details available upon request.",
+        "tags": "Classified"
+      }
+    }
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "uptime": "Uptime Guaranteed",
+    "datapoints": "Data Processed",
+    "experience": "Years of Experience"
+  },
+  "cta": {
+    "title": "Ready to initiate the protocol?",
+    "description": "Whether you need a custom white-label solution or an automated system to scale your operations, we're ready to build.",
+    "placeholder": "Enter your email",
+    "button": "Initiate Transmission"
+  },
+  "footer": {
+    "company": "SendLine",
+    "description": "We architect high-performance digital infrastructure.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "rights": "All protocols reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "services": {
+    "badge": "SERVICES & TECH STACK",
+    "title1": "Engineering",
+    "title2": "Precision",
+    "title3": "Scalable Solutions.",
+    "description": "We architect high-performance digital infrastructure. From white-label SaaS development to industrial IoT monitoring, SendLine bridges the gap between hardware and software.",
+    "coreTitle": "Core Capabilities",
+    "coreSubtitle": "Technical expertise deployed for mission-critical systems.",
+    "whiteLabel": {
+      "title": "White Label Development",
+      "description": "Full-cycle software development delivered under your brand. We build scalable, clean, and documented codebases ready for handoff or long-term maintenance.",
+      "features": "SaaS Multi-tenant Scaling,API-First Architecture,Enterprise React Applications"
+    },
+    "ai": {
+      "title": "AI & Process Automation",
+      "description": "Leveraging LLMs and custom automation scripts to automate repetitive tasks. We integrate intelligent agents into existing workflows to boost efficiency.",
+      "features": "Custom LLM Deployments,Workflow Automation (n8n, Zapier),Data Extraction & Processing"
+    },
+    "bi": {
+      "title": "BI & Systems Integration",
+      "description": "Connecting disparate systems to create a unified source of truth. We build custom dashboards and ETL pipelines that turn raw data into actionable insights.",
+      "features": "Custom Data Dashboards,Third-party API Integrations,Automated Reporting Systems"
+    },
+    "iot": {
+      "title": "IoT & Industrial Monitoring",
+      "description": "Bridging the physical and digital worlds. We develop software for edge devices, sensors, and industrial controllers to enable real-time remote monitoring.",
+      "features": "MQTT / CoAP Protocols,Hardware Data Visualization,Edge Connectivity Systems"
+    },
+    "caseStudy": {
+      "badge": "CASE STUDY",
+      "title": "Industrial Plant Telemetry",
+      "link": "View Project Details"
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "subtitle": "The tools we use to build robust, scalable systems.",
+      "frontend": "FRONTEND & UI",
+      "backend": "BACKEND & API",
+      "devops": "DEVOPS & CLOUD",
+      "iot": "IOT & HARDWARE"
+    },
+    "cta": {
+      "title": "Ready to scale your infrastructure?",
+      "description": "Whether you need a full white-label solution or a specific IoT integration, SendLine delivers engineering excellence.",
+      "scheduleBtn": "Schedule Consultation",
+      "portfolioBtn": "View Portfolio"
+    }
+  },
+  "contact": {
+    "title1": "Initiate",
+    "title2": "Sequence.",
+    "description": "Specializing in high-performance White-label Solutions, AI Automation, and IoT Architectures. Let's build the future, one line of code at a time.",
+    "directChannel": "DIRECT CHANNEL",
+    "email": "hello@sendline.dev",
+    "location": "LOCATION",
+    "locationValue": "Remote / Worldwide",
+    "networkUplinks": "NETWORK UPLINKS",
+    "form": {
+      "title": "// REQUEST QUOTE",
+      "name": "Full Name",
+      "email": "Email",
+      "projectType": "Project Type",
+      "budget": "Budget",
+      "message": "Describe your project...",
+      "status": "SYSTEM READY",
+      "submit": "SEND TRANSMISSION",
+      "projectTypes": {
+        "whiteLabel": "White Label",
+        "ai": "AI Automation",
+        "iot": "IoT & Monitoring",
+        "bi": "BI & Integrations",
+        "other": "Other"
+      },
+      "budgets": {
+        "small": "< €5,000",
+        "medium": "€5,000 - €15,000",
+        "large": "€15,000 - €50,000",
+        "enterprise": "> €50,000"
+      }
+    }
+  }
+}

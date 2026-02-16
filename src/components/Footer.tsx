@@ -1,0 +1,115 @@
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+
+export default function Footer() {
+  const t = useTranslations("footer");
+  const nav = useTranslations("nav");
+
+  return (
+    <footer className="border-t border-border bg-background">
+      <div className="mx-auto max-w-7xl px-6 py-16">
+        <div className="grid gap-12 md:grid-cols-4">
+          <div className="md:col-span-2">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-primary" />
+              <span className="text-lg font-bold tracking-wider text-white">
+                SENDLINE
+              </span>
+            </div>
+            <p className="max-w-sm text-sm text-muted">{t("description")}</p>
+          </div>
+
+          <div>
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-muted">
+              {t("quickLinks")}
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="#projects"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  {nav("projects")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  {nav("services")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  {nav("contact")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-muted">
+              {t("connect")}
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="https://github.com/sendline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/company/sendline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/sendline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground transition-colors hover:text-primary"
+                >
+                  X (Twitter)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+          <p className="text-xs text-muted">
+            &copy; 2025 SendLine. {t("rights")}
+          </p>
+          <div className="flex gap-6">
+            <Link
+              href="#"
+              className="text-xs text-muted transition-colors hover:text-foreground"
+            >
+              {t("privacy")}
+            </Link>
+            <Link
+              href="#"
+              className="text-xs text-muted transition-colors hover:text-foreground"
+            >
+              {t("terms")}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
