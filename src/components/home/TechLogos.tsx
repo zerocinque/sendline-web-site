@@ -1,29 +1,53 @@
-const techs = [
-  "Python",
-  "TensorFlow",
-  "React",
-  "Docker",
-  "Terraform",
-  "AWS",
-  "Rust",
-  "MQTT",
+"use client";
+
+import {
+  SiPython,
+  SiDotnet,
+  SiReact,
+  SiDocker,
+  SiNextdotjs,
+  SiPrisma,
+  SiGithub,
+  SiMqtt,
+  SiTypescript,
+  SiPostgresql,
+  SiMongodb,
+  SiGraphql,
+  SiGrafana,
+  SiN8N
+} from "react-icons/si";
+import LogoLoop from "../LogoLoop";
+
+const techLogos = [
+  { node: <SiPython />, title: "Python" },
+  { node: <SiDotnet />, title: "DotNet" },
+  { node: <SiReact />, title: "React" },
+  { node: <SiDocker />, title: "Docker" },
+  { node: <SiNextdotjs />, title: "Next.js" },
+  { node: <SiPrisma />, title: "Prisma" },
+  { node: <SiGithub />, title: "GitHub" },
+  { node: <SiMqtt />, title: "MQTT" },
+  { node: <SiTypescript />, title: "TypeScript" },
+  { node: <SiPostgresql />, title: "Postgresql" },
+  { node: <SiMongodb />, title: "Mongodb" },
+  { node: <SiGraphql />, title: "Graphql" },
+  { node: <SiGrafana />, title: "Grafana" },
+  { node: <SiN8N />, title: "n8n" },
 ];
 
 export default function TechLogos() {
   return (
-    <section className="border-y border-border bg-surface/50">
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-          {techs.map((tech) => (
-            <span
-              key={tech}
-              className="font-mono text-xs tracking-wider text-muted/60 transition-colors hover:text-muted"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-      </div>
+    <section className="border-y border-border bg-surface/50 py-6">
+      <LogoLoop
+        logos={techLogos}
+        speed={80}
+        direction="left"
+        logoHeight={24}
+        gap={48}
+        pauseOnHover
+        fadeOut
+        scaleOnHover
+      />
     </section>
   );
 }
