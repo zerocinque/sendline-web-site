@@ -9,7 +9,7 @@
   --color-surface-light: #111d33;
   --color-border: #1e293b;
   --color-muted: #64748b;
-  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 html {
