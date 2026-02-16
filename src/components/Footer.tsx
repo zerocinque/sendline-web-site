@@ -77,16 +77,6 @@ export default function Footer() {
                   LinkedIn
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://x.com/sendline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-foreground transition-colors hover:text-primary"
-                >
-                  X (Twitter)
-                </a>
-              </li>
             </ul>
           </div>
         </div>
