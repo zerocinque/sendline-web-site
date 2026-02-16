@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DotGrid from "@/components/DotGrid";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600", "700"],
@@ -37,10 +38,25 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={ibmPlexMono.className}>
+        <div className="fixed inset-0 z-0">
+          <DotGrid
+            dotSize={5}
+            gap={15}
+            baseColor="#271E37"
+            activeColor="#5227FF"
+            proximity={120}
+            shockRadius={250}
+            shockStrength={5}
+            resistance={750}
+            returnDuration={1.5}
+          />
+          15        </div>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <div className="relative z-10">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
