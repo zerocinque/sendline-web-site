@@ -20,6 +20,19 @@
   "techLogos": {
     "title": "Technologies we use"
   },
+  "about": {
+    "badge": "ABOUT ME",
+    "title": "Software developer, technology partner",
+    "paragraph1": "I'm Luigi, a freelance software developer. I work with SMBs and startups that need real digital solutions: automation, ERP integrations, IoT monitoring, and custom web applications.",
+    "paragraph2": "I've gained experience in tech companies and industrial environments, where I learned that technology only works when it solves real problems. That's why I always start from the process, not the tool.",
+    "paragraph3": "I work as your single technical point of contact: from requirements gathering to deployment. No unnecessary meetings, no surprises. Just clean code and measurable results.",
+    "card": {
+      "name": "Luigi",
+      "roles": ["Full-Stack Developer"],
+      "location": "Italy / Remote",
+      "experience": "10+"
+    }
+  },
   "specializations": {
     "badge": "CORE COMPETENCIES",
     "title": "Technical Specializations",

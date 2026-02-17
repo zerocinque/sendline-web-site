@@ -8,13 +8,34 @@
   "hero": {
     "badge": "DISPONIBILE",
     "titles": [
-      { "line1": "Il tuo reparto IT,", "line2": "senza assumerlo." },
-      { "line1": "Meno lavoro manuale.", "line2": "Più crescita." },
-      { "line1": "Automatizza. Integra.", "line2": "Cresci." },
-      { "line1": "Tecnologia che", "line2": "lavora per te." },
-      { "line1": "Dal foglio Excel", "line2": "al processo automatico." },
-      { "line1": "Il gestionale non basta?", "line2": "Lo facciamo parlare." },
-      { "line1": "Software su misura.", "line2": "Risultati concreti." }
+      {
+        "line1": "Il tuo reparto IT,",
+        "line2": "senza assumerlo."
+      },
+      {
+        "line1": "Meno lavoro manuale.",
+        "line2": "Più crescita."
+      },
+      {
+        "line1": "Automatizza. Integra.",
+        "line2": "Cresci."
+      },
+      {
+        "line1": "Tecnologia che",
+        "line2": "lavora per te."
+      },
+      {
+        "line1": "Dal foglio Excel",
+        "line2": "al processo automatico."
+      },
+      {
+        "line1": "Il gestionale non basta?",
+        "line2": "Lo facciamo parlare."
+      },
+      {
+        "line1": "Software su misura.",
+        "line2": "Risultati concreti."
+      }
     ],
     "description": "Sviluppo software su misura per PMI e startup: dall’integrazione con il tuo gestionale, all’automazione degli ordini, fino al monitoraggio IoT dei tuoi impianti. Senza i costi di un reparto IT interno.",
     "viewPortfolio": "Vedi cosa ho realizzato",
@@ -22,6 +43,24 @@
   },
   "techLogos": {
     "title": "Tecnologie che utilizziamo"
+  },
+  "about": {
+    "badge": "CHI SONO",
+    "title": "> luigi@sendline:~$ whoami",
+    "paragraph1": "Mi chiamo Luigi. Ho scritto le mie prime righe di codice all'istituto tecnico e da lì non ho più smesso. Ho fatto il Backend Developer in Deltatre, lavorando su piattaforme che servivano milioni di utenti. Poi il Responsabile IT in Rogelfrut, dove ho toccato con mano cosa significa far funzionare la tecnologia in un'azienda reale — con budget limitati, urgenze quotidiane e software che non vogliono parlarsi.",
+    "paragraph2": "La verità è che le PMI hanno problemi tecnologici seri ma raramente trovano qualcuno che li risolva senza complicare tutto. I grandi fornitori sono troppo costosi e troppo lenti. I freelancer generici non hanno la visione d'insieme. Serviva una via di mezzo: qualcuno con esperienza aziendale reale, che sviluppa soluzioni concrete e lavora fianco a fianco con te.",
+    "paragraph3": "Per questo ho fondato SendLine. Automazioni, integrazioni con il gestionale, monitoraggio IoT, chatbot AI — tutto su misura, con un unico interlocutore e senza intermediari. Se hai un processo che ti rallenta, probabilmente posso automatizzarlo. Se hai due sistemi che non comunicano, li faccio parlare.",
+    "card": {
+      "name": "Luigi",
+      "roles": [
+        "Consulente IT",
+        "Sviluppatore Full-Stack",
+        "Ingegnere IoT",
+        "Integratore AI"
+      ],
+      "location": "Italia / Remoto",
+      "experience": "10+"
+    }
   },
   "specializations": {
     "badge": "01. SERVIZI",
@@ -146,7 +185,7 @@
     "title": "404",
     "subtitle": "// segnale_non_trovato",
     "description": "La trasmissione richiesta non esiste o è stata terminata.",
-  "home": "TORNA ALLA HOME PAGE",
+    "home": "TORNA ALLA HOME PAGE",
     "contact": "CONTATTAMI"
   },
   "contact": {
