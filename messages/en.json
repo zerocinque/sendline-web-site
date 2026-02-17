@@ -33,6 +33,26 @@
       "experience": "10+"
     }
   },
+  "howIWork": {
+    "badge": "MY METHOD",
+    "title": "How I work",
+    "listen": {
+      "title": "Listen",
+      "description": "You tell me about the problem or idea. I analyze your processes and existing systems."
+    },
+    "proposal": {
+      "title": "Proposal",
+      "description": "I present a concrete solution with clear timelines and costs. No surprises."
+    },
+    "develop": {
+      "title": "Development",
+      "description": "I build the solution with incremental releases, so you can see progress and give feedback."
+    },
+    "deploy": {
+      "title": "Deploy & Support",
+      "description": "I deploy to production, train you on usage, and stay available for support and future improvements."
+    }
+  },
   "specializations": {
     "badge": "CORE COMPETENCIES",
     "title": "Technical Specializations",

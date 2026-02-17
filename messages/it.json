@@ -62,6 +62,26 @@
       "experience": "10+"
     }
   },
+  "howIWork": {
+    "badge": "IL MIO METODO",
+    "title": "Come lavoro",
+    "listen": {
+      "title": "Ascolto",
+      "description": "Mi racconti il problema o l'idea. Analizzo i tuoi processi e i sistemi già in uso."
+    },
+    "proposal": {
+      "title": "Proposta",
+      "description": "Ti presento una soluzione concreta con tempi e costi chiari. Nessuna sorpresa."
+    },
+    "develop": {
+      "title": "Sviluppo",
+      "description": "Costruisco la soluzione con rilasci intermedi, così puoi vedere i progressi e dare feedback."
+    },
+    "deploy": {
+      "title": "Deploy & Supporto",
+      "description": "Metto in produzione, ti formo sull'utilizzo, e resto disponibile per assistenza e evoluzioni."
+    }
+  },
   "specializations": {
     "badge": "01. SERVIZI",
     "title": "Specializzazioni Tecniche",
