@@ -16,8 +16,11 @@ import {
   SiGrafana,
   SiN8N,
   SiRedis,
-  SiNodedotjs
+  SiNodedotjs,
+  SiSqlite,
+  SiQlik,
 } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
 import LogoLoop from "../LogoLoop";
 
 const techLogos = [
@@ -37,6 +40,9 @@ const techLogos = [
   { node: <SiN8N />, title: "n8n" },
   { node: <SiRedis />, title: "Redis" },
   { node: <SiNodedotjs />, title: "Nodejs" },
+  { node: <SiSqlite />, title: "SQLite" },
+  { node: <DiMsqlServer />, title: "MSSQL Server" },
+  { node: <SiQlik />, title: "Qlik" },
 ];
 
 export default function TechLogos() {

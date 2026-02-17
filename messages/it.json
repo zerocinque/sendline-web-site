@@ -16,9 +16,9 @@
       { "line1": "Il gestionale non basta?", "line2": "Lo facciamo parlare." },
       { "line1": "Software su misura.", "line2": "Risultati concreti." }
     ],
-    "description": "Specializzati in soluzioni white-label ad alte prestazioni, automazione AI e architetture IoT. Costruiamo la spina dorsale delle infrastrutture tecnologiche moderne.",
-    "viewPortfolio": "Vedi Portfolio",
-    "contactUs": "Contattami"
+    "description": "Sviluppo software su misura per PMI e startup: dall’integrazione con il tuo gestionale, all’automazione degli ordini, fino al monitoraggio IoT dei tuoi impianti. Senza i costi di un reparto IT interno.",
+    "viewPortfolio": "Vedi cosa ho realizzato",
+    "contactUs": "Parliamo del tuo progetto"
   },
   "techLogos": {
     "title": "Tecnologie che utilizziamo"
@@ -28,15 +28,15 @@
     "title": "Specializzazioni Tecniche",
     "ai": {
       "title": "Automazione AI",
-      "description": "Pipeline di machine learning personalizzate e soluzioni di automazione intelligente per ottimizzare workflow aziendali."
+      "description": "Hai processi ripetitivi che rubano ore al tuo team? Automatizziamo il lavoro manuale con soluzioni AI: importazione ordini da email, classificazione documenti, chatbot per il supporto clienti. Meno errori, più tempo per far crescere il business."
     },
     "erp": {
       "title": "Integrazioni ERP & BI",
-      "description": "Integrazione senza soluzione di continuità con i principali sistemi ERP e piattaforme per l'analisi avanzata dei dati."
+      "description": "Il tuo gestionale non comunica con l'e-commerce? Gli ordini finiscono su Excel prima di arrivare nel sistema? Colleghiamo i tuoi software tra loro — ERP, CRM, e-commerce, strumenti di analisi — eliminando i passaggi manuali e i silos di dati."
     },
     "iot": {
       "title": "Monitoraggio IoT & Sensori",
-      "description": "Monitoraggio in tempo reale di dispositivi e sensori IoT per il controllo industriale e l'automazione."
+      "description": "Temperature, umidità, consumi energetici, stato macchinari: monitoriamo tutto in tempo reale con sensori IoT, dashboard dedicate e allarmi automatici su Telegram, email o SMS. Sai sempre cosa succede, anche quando non sei in azienda."
     }
   },
   "projects": {
@@ -45,19 +45,19 @@
     "viewAll": "Vedi Tutti",
     "items": {
       "factory": {
-        "title": "Smart Factory Dashboard",
-        "description": "Dashboard in tempo reale per il monitoraggio della produzione manifatturiera, gestione dell'efficienza e analisi predittiva.",
-        "tags": "React,Node.js,IoT,AWS"
+        "title": "Monitoraggio Celle -18°C",
+        "description": "Sistema IoT con sensori LoRaWAN, allarmi real-time su Telegram, dashboard Grafana. Settore: food & cold chain.",
+        "tags": "IoT,Node.js,PostgreSQL,LoRaWAN,Grafana,Telegram"
       },
       "supplychain": {
-        "title": "Supply Chain AI",
-        "description": "Piattaforma di intelligence logistica basata su AI per l'ottimizzazione della catena di approvvigionamento.",
-        "tags": "Python,TensorFlow,AWS,Docker"
+        "title": "Portale Ordini B2B",
+        "description": "Piattaforma web per la raccolta ordini clienti con integrazione automatica al gestionale. Settore: distribuzione.",
+        "tags": "DotNetCore,Vuejs,Docker,MongoDB,Restful API integration"
       },
       "crm": {
-        "title": "White Label CRM",
-        "description": "CRM completamente personalizzabile e white-label per agenzie e rivenditori SaaS.",
-        "tags": "Next.js,PostgreSQL,Stripe,Redis"
+        "title": "Chatbot AI su Knowledge Base",
+        "description": "Assistente virtuale RAG addestrato sulla documentazione aziendale. Settore: supporto clienti",
+        "tags": "Next.js,PostgreSQL,Redis,Agno,FastApi,QdrantDB"
       },
       "stealth": {
         "title": "Project Stealth",
@@ -67,26 +67,25 @@
     }
   },
   "stats": {
-    "projects": "Progetti Completati",
-    "uptime": "Uptime Garantito",
-    "datapoints": "Dati Elaborati",
-    "experience": "Anni di Esperienza"
+    "projects": "anni di esperienza IT in aziende tech e industriali",
+    "uptime": "specializzazioni verticali",
+    "experience": "Dalla progettazione al deploy, un unico interlocutore"
   },
   "cta": {
     "badge": "03. CONTATTI",
-    "title": "Pronti ad avviare il protocollo?",
-    "description": "Che tu abbia bisogno di una soluzione white-label personalizzata o di un sistema automatizzato per scalare le tue operazioni, progettiamo il futuro insieme.",
-    "nameLabel": "./input_nome",
+    "title": "Hai un processo da automatizzare o un’idea da sviluppare?",
+    "description": "Raccontami il tuo progetto: analizziamo insieme la soluzione migliore. Nessun impegno, solo una conversazione per capire come posso aiutarti.",
+    "nameLabel": "Il tuo nome",
     "namePlaceholder": "Mario Rossi",
-    "emailLabel": "./input_email",
+    "emailLabel": "La tua email",
     "emailPlaceholder": "mario@esempio.com",
-    "messageLabel": "./input_messaggio",
-    "messagePlaceholder": "Raccontami le specifiche del tuo progetto...",
-    "button": "Esegui Trasmissione"
+    "messageLabel": "Il tuo messaggio",
+    "messagePlaceholder": "Raccontami il tuo progetto...",
+    "button": "Invia messaggio"
   },
   "footer": {
     "company": "SendLine",
-    "description": "Progettiamo infrastrutture digitali ad alte prestazioni.",
+    "description": "Software su misura, automazioni e IoT per la tua azienda",
     "quickLinks": "Link Rapidi",
     "connect": "Connettiti",
     "rights": "Tutti i protocolli riservati.",
