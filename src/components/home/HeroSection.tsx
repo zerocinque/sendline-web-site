@@ -13,15 +13,22 @@ export default function HeroSection() {
   const [title] = useState(() => titles[Math.floor(Math.random() * titles.length)]);
   const line2Delay = (title.line1.length + 1) * 50;
 
+  // Use the longest title for the invisible placeholder to always reserve enough space
+  const longestTitle = titles.reduce((longest, t) => {
+    const currentLen = t.line1.length + t.line2.length;
+    const longestLen = longest.line1.length + longest.line2.length;
+    return currentLen > longestLen ? t : longest;
+  }, titles[0]);
+
   return (
-    <section className="relative min-h-screen overflow-hidden pt-20">
+    <section className="relative min-h-screen overflow-hidden pt-10">
       {/* Background gradient effects */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-0 top-0 h-[600px] w-[600px] rounded-full bg-primary/5 blur-[120px]" />
         <div className="absolute -left-32 top-1/3 h-[400px] w-[400px] rounded-full bg-primary/3 blur-[100px]" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-24 md:py-32 lg:grid-cols-12 lg:py-40">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 md:py-20 lg:grid-cols-12 lg:py-28">
         <div className="lg:col-span-8">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 font-mono text-xs uppercase tracking-widest text-primary">
             <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
@@ -31,9 +38,9 @@ export default function HeroSection() {
           <div className="relative mb-6 mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             {/* Invisible placeholder to reserve space */}
             <span className="invisible" aria-hidden="true">
-              {title.line1}
+              {longestTitle.line1}
               <br />
-              {title.line2}
+              {longestTitle.line2}
             </span>
             {/* Typed text overlaid on top */}
             <span className="absolute inset-0" suppressHydrationWarning>
