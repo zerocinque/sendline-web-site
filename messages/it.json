@@ -12,7 +12,7 @@
     "title3": "Intelligence",
     "description": "Specializzati in soluzioni white-label ad alte prestazioni, automazione AI e architetture IoT. Costruiamo la spina dorsale delle infrastrutture tecnologiche moderne.",
     "viewPortfolio": "Vedi Portfolio",
-    "contactUs": "Contattaci"
+    "contactUs": "Contattami"
   },
   "techLogos": {
     "title": "Tecnologie che utilizziamo"
@@ -128,6 +128,14 @@
       "scheduleBtn": "Prenota Consulenza",
       "portfolioBtn": "Vedi Portfolio"
     }
+  },
+  "notFound": {
+    "badge": "ERRORE 404",
+    "title": "404",
+    "subtitle": "// segnale_non_trovato",
+    "description": "La trasmissione richiesta non esiste o è stata terminata.",
+  "home": "TORNA ALLA HOME PAGE",
+    "contact": "CONTATTAMI"
   },
   "contact": {
     "title1": "Initiate",
