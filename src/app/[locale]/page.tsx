@@ -6,6 +6,7 @@ import HowIWork from "@/components/home/HowIWork";
 import Specializations from "@/components/home/Specializations";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import Stats from "@/components/home/Stats";
+import FAQ from "@/components/home/FAQ";
 import CTASection from "@/components/home/CTASection";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <HowIWork />
       <FeaturedProjects />
       <Stats />
+      <FAQ />
       <CTASection />
     </>
   );

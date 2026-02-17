@@ -130,6 +130,34 @@
     "uptime": "specializzazioni verticali",
     "experience": "Dalla progettazione al deploy, un unico interlocutore"
   },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Domande frequenti",
+    "cost": {
+      "question": "Quanto costa un progetto?",
+      "answer": "Dipende dalla complessità. Dopo una prima chiamata gratuita ti fornisco un preventivo dettagliato con tempi e costi. Nessun vincolo."
+    },
+    "timeline": {
+      "question": "Quanto tempo ci vuole?",
+      "answer": "I progetti più semplici (automazioni, integrazioni) richiedono 2-4 settimane. Soluzioni più complesse 1-3 mesi. Ti do sempre una timeline chiara prima di partire."
+    },
+    "remote": {
+      "question": "Lavori solo con aziende della tua zona?",
+      "answer": "No, lavoro in remoto con clienti in tutta Italia. Per le fasi iniziali basta una videochiamata."
+    },
+    "changes": {
+      "question": "E se dopo il rilascio ho bisogno di modifiche?",
+      "answer": "Offro supporto continuativo. Le piccole modifiche sono incluse, per evoluzioni più importanti concordiamo tempi e costi prima di procedere."
+    },
+    "examples": {
+      "question": "Posso vedere esempi di lavori precedenti?",
+      "answer": "Sì, nella sezione progetti trovi alcuni casi reali. Per dettagli più specifici ne parliamo in chiamata."
+    },
+    "satisfaction": {
+      "question": "Che succede se il progetto non mi soddisfa?",
+      "answer": "Lavoro con rilasci intermedi proprio per evitare sorprese. Vedi e approvi ogni fase prima di andare avanti."
+    }
+  },
   "cta": {
     "badge": "03. CONTATTI",
     "title": "Hai un processo da automatizzare o un’idea da sviluppare?",
