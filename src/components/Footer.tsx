@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-xs text-muted">
-            &copy; 2025 SendLine. {t("rights")}
+            &copy; 2026 Bottasso Luigi di Luigi Bottasso. {t("rights")}
           </p>
           <div className="flex gap-6">
             <Link

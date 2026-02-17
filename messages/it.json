@@ -6,7 +6,7 @@
     "startProject": "Inizia Progetto"
   },
   "hero": {
-    "badge": "PORTFOLIO TECNICO",
+    "badge": "DISPONIBILE",
     "title1": "Architecting",
     "title2": "Digital",
     "title3": "Intelligence",
@@ -18,7 +18,7 @@
     "title": "Tecnologie che utilizziamo"
   },
   "specializations": {
-    "badge": "COMPETENZE PRINCIPALI",
+    "badge": "01. SERVIZI",
     "title": "Specializzazioni Tecniche",
     "ai": {
       "title": "Automazione AI",
@@ -34,7 +34,7 @@
     }
   },
   "projects": {
-    "badge": "LAVORI SELEZIONATI",
+    "badge": "02. LAVORI SELEZIONATI",
     "title": "Progetti in Evidenza",
     "viewAll": "Vedi Tutti",
     "items": {
@@ -67,10 +67,16 @@
     "experience": "Anni di Esperienza"
   },
   "cta": {
+    "badge": "03. CONTATTI",
     "title": "Pronti ad avviare il protocollo?",
-    "description": "Che tu abbia bisogno di una soluzione white-label personalizzata o di un sistema automatizzato per scalare le tue operazioni, siamo pronti a costruire.",
-    "placeholder": "Inserisci la tua email",
-    "button": "Avvia Trasmissione"
+    "description": "Che tu abbia bisogno di una soluzione white-label personalizzata o di un sistema automatizzato per scalare le tue operazioni, progettiamo il futuro insieme.",
+    "nameLabel": "./input_nome",
+    "namePlaceholder": "Mario Rossi",
+    "emailLabel": "./input_email",
+    "emailPlaceholder": "mario@esempio.com",
+    "messageLabel": "./input_messaggio",
+    "messagePlaceholder": "Raccontami le specifiche del tuo progetto...",
+    "button": "Esegui Trasmissione"
   },
   "footer": {
     "company": "SendLine",
@@ -82,10 +88,11 @@
     "terms": "Termini di Servizio"
   },
   "services": {
-    "badge": "SERVIZI & TECH STACK",
+    "badge": "DISPONIBILE PER NUOVI CONTRATTI",
     "title1": "Engineering",
     "title2": "Precision",
-    "title3": "Scalable Solutions.",
+    "title3": "Scalable",
+    "title4": "Solutions",
     "description": "Progettiamo infrastrutture digitali ad alte prestazioni. Dallo sviluppo white-label al monitoraggio IoT industriale, SendLine colma il divario tra hardware e software.",
     "coreTitle": "Core Capabilities",
     "coreSubtitle": "Competenze tecniche implementate per sistemi mission-critical.",

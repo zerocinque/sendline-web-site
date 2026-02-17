@@ -34,7 +34,7 @@ export default function FeaturedProjects() {
               {t("title")}
             </h2>
           </div>
-          <button className="hidden text-sm text-muted transition-colors hover:text-primary sm:inline-flex items-center gap-2">
+          {/* <button className="hidden text-sm text-muted transition-colors hover:text-primary sm:inline-flex items-center gap-2">
             {t("viewAll")}
             <svg
               className="h-4 w-4"
@@ -49,7 +49,7 @@ export default function FeaturedProjects() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">

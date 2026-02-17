@@ -24,9 +24,9 @@ export default function HeroSection() {
             <br />
             <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
               {t("title2")}
+              <br />
+              {t("title3")}
             </span>
-            <br />
-            {t("title3")}
           </h1>
 
           <p className="mb-10 max-w-2xl border-l-2 border-primary/50 pl-6 font-mono text-base leading-relaxed text-muted sm:text-lg">

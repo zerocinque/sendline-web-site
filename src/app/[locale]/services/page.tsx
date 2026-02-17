@@ -12,11 +12,15 @@ import {
   SiCloudflare,
   SiDocker,
   SiGithubactions,
-  SiRaspberrypi,
   SiMqtt,
-  SiIota,
-  SiServerfault
+  SiVuedotjs,
+  SiNodedotjs,
+  SiRedis,
+  SiMongodb,
 } from "react-icons/si";
+import {FaServer} from "react-icons/fa";
+import { IoRadio } from "react-icons/io5";
+import { MdDashboardCustomize } from "react-icons/md";
 
 function CheckIcon() {
   return (
@@ -71,25 +75,26 @@ const techStack = {
     { name: "React / Next.js", icon: <SiReact /> },
     { name: "TailwindCSS", icon: <SiTailwindcss /> },
     { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Vuejs", icon: <SiTypescript /> },
+    { name: "Vuejs", icon: <SiVuedotjs /> },
   ],
   backend: [
     { name: ".Net Core Framework", icon: <SiDotnet /> },
-    { name: "Nodejs / express", icon: <SiDotnet /> },
+    { name: "Nodejs / express", icon: <SiNodedotjs /> },
     { name: "Python / FastAPI", icon: <SiPython /> },
     { name: "PostgreSQL / MySQL / SQL server", icon: <SiPostgresql /> },
-    { name: "Redis", icon: <SiPostgresql /> },
-    { name: "MongoDB / Qdrant", icon: <SiPostgresql /> },
+    { name: "Redis", icon: <SiRedis /> },
+    { name: "MongoDB / Qdrant", icon: <SiMongodb /> },
   ],
   devops: [
     { name: "Cloudflare", icon: <SiCloudflare /> },
     { name: "Docker", icon: <SiDocker /> },
     { name: "CI/CD Pipelines", icon: <SiGithubactions /> },
-    { name: "Servers on prem", icon: <SiServerfault /> },
+    { name: "Servers on prem", icon: <FaServer /> },
   ],
   iot: [
     { name: "MQTT Brokers", icon: <SiMqtt /> },
-    { name: "LoRaWAN", icon: <SiIota /> },
+    { name: "LoRaWAN", icon: <IoRadio /> },
+    { name: "Monitoring", icon: <MdDashboardCustomize /> },
   ],
 };
 
@@ -146,14 +151,14 @@ export default function ServicesPage() {
           <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-primary/5 blur-[120px]" />
         </div>
         <div className="relative mx-auto max-w-7xl px-6">
-          <span className="mb-6 inline-block font-mono text-xs tracking-widest text-primary">
+          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 font-mono text-xs uppercase tracking-widest text-primary">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
             {t("badge")}
           </span>
           <h1 className="mb-6 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-            {t("title1")}{" "}
-            <span className="text-primary">{t("title2")}</span>.
+            <span className="whitespace-nowrap">{t("title1")}{" "}<span className="text-primary">{t("title2")}</span>.</span>
             <br />
-            {t("title3")}
+            <span className="whitespace-nowrap"><span className="text-primary">{t("title3")}</span>{" "}{t("title4")}.</span>
           </h1>
           <p className="max-w-2xl text-base text-muted sm:text-lg">
             {t("description")}

@@ -6,7 +6,7 @@
     "startProject": "Start Project"
   },
   "hero": {
-    "badge": "TECHNICAL PORTFOLIO",
+    "badge": "AVAILABLE FOR HIRE",
     "title1": "Architecting",
     "title2": "Digital",
     "title3": "Intelligence",
@@ -67,10 +67,16 @@
     "experience": "Years of Experience"
   },
   "cta": {
+    "badge": "03. GET IN TOUCH",
     "title": "Ready to initiate the protocol?",
-    "description": "Whether you need a custom white-label solution or an automated system to scale your operations, we're ready to build.",
-    "placeholder": "Enter your email",
-    "button": "Initiate Transmission"
+    "description": "Whether you need a custom white-label solution or an automated system to scale your operations, let's architect the future together.",
+    "nameLabel": "./input_name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "./input_email",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "./input_message",
+    "messagePlaceholder": "Tell me about your project specs...",
+    "button": "Execute Transmission"
   },
   "footer": {
     "company": "SendLine",
@@ -82,10 +88,11 @@
     "terms": "Terms of Service"
   },
   "services": {
-    "badge": "SERVICES & TECH STACK",
+    "badge": "AVAILABLE FOR NEW CONTRACTS",
     "title1": "Engineering",
     "title2": "Precision",
-    "title3": "Scalable Solutions.",
+    "title3": "Scalable",
+    "title4": "Solutions",
     "description": "We architect high-performance digital infrastructure. From white-label SaaS development to industrial IoT monitoring, SendLine bridges the gap between hardware and software.",
     "coreTitle": "Core Capabilities",
     "coreSubtitle": "Technical expertise deployed for mission-critical systems.",

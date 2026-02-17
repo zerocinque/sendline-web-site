@@ -6,26 +6,58 @@ export default function CTASection() {
   const t = useTranslations("cta");
 
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-3xl px-6 text-center">
-        <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
+    <section className="relative overflow-hidden bg-surface py-24" id="contact">
+      {/* Glow effect */}
+      <div className="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-primary/5 blur-[100px]" />
+
+      <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
+        <h2 className="mb-4 font-mono text-sm text-primary">{t("badge")}</h2>
+        <h3 className="mb-6 text-4xl font-bold text-white md:text-5xl">
           {t("title")}
-        </h2>
-        <p className="mb-10 text-muted">{t("description")}</p>
+        </h3>
+        <p className="mb-10 text-lg text-muted">{t("description")}</p>
+
         <form
-          className="mx-auto flex max-w-md flex-col gap-3 sm:flex-row"
+          className="rounded-lg border border-border bg-black/50 p-8 text-left backdrop-blur-sm"
           onSubmit={(e) => e.preventDefault()}
         >
-          <input
-            type="email"
-            placeholder={t("placeholder")}
-            className="flex-1 rounded-md border border-border bg-surface px-4 py-3 text-sm text-white placeholder-muted outline-none transition-colors focus:border-primary"
-          />
+          <div className="mb-6 grid gap-6 md:grid-cols-2">
+            <div>
+              <label className="mb-2 block font-mono text-xs text-muted">
+                {t("nameLabel")}
+              </label>
+              <input
+                type="text"
+                placeholder={t("namePlaceholder")}
+                className="w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div>
+              <label className="mb-2 block font-mono text-xs text-muted">
+                {t("emailLabel")}
+              </label>
+              <input
+                type="email"
+                placeholder={t("emailPlaceholder")}
+                className="w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
+              />
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <label className="mb-2 block font-mono text-xs text-muted">
+              {t("messageLabel")}
+            </label>
+            <textarea
+              placeholder={t("messagePlaceholder")}
+              className="h-32 w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
+            />
+          </div>
+
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 font-mono text-sm font-medium text-white transition-colors hover:bg-primary-hover"
+            className="flex w-full items-center justify-center gap-2 rounded bg-primary py-4 font-mono text-white transition-colors hover:bg-primary-hover"
           >
-            {t("button")}
             <svg
               className="h-4 w-4"
               fill="none"
@@ -36,9 +68,10 @@ export default function CTASection() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
               />
             </svg>
+            {t("button")}
           </button>
         </form>
       </div>
