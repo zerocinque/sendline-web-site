@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="mb-4 flex items-center gap-2">
               <Image src="/Triangle_gradient_white_gray_TBG.svg" alt="SendLine logo" width={20} height={16} />
               <span className="text-lg font-bold tracking-wider text-white">
-                Sendline
+                SendLine
               </span>
             </div>
             <p className="max-w-sm text-sm text-muted">{t("description")}</p>

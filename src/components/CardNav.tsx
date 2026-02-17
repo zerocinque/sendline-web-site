@@ -211,7 +211,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <Link href={logoHref} className="logo-container flex items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <img src={logo} alt={logoAlt} className="logo h-[28px]" />
-            SenLine
+            SendLine
           </Link>
 
           <div className="flex items-center gap-2 order-3">
