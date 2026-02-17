@@ -7,9 +7,12 @@
   },
   "hero": {
     "badge": "AVAILABLE FOR HIRE",
-    "title1": "Architecting",
-    "title2": "Digital",
-    "title3": "Intelligence",
+    "titles": [
+      { "line1": "Architecting", "line2": "Digital Intelligence" },
+      { "line1": "Building", "line2": "Scalable Systems" },
+      { "line1": "Engineering", "line2": "Smart Solutions" },
+      { "line1": "Designing", "line2": "Future Infrastructure" }
+    ],
     "description": "Specializing in high-performance white-label solutions, AI automation, and IoT architectures. Building the backbone of modern tech infrastructure.",
     "viewPortfolio": "View Portfolio",
     "contactUs": "Contact me"

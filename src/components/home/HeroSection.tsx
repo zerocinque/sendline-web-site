@@ -1,8 +1,18 @@
-import { useTranslations } from "next-intl";
+"use client";
+
+import { useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const messages = useMessages();
+  const titles = (messages as Record<string, Record<string, Array<{ line1: string; line2: string }>>>).hero.titles;
+  const [title, setTitle] = useState(titles[0]);
+
+  useEffect(() => {
+    setTitle(titles[Math.floor(Math.random() * titles.length)]);
+  }, [titles]);
 
   return (
     <section className="relative min-h-screen overflow-hidden pt-20">
@@ -20,12 +30,10 @@ export default function HeroSection() {
           </span>
 
           <h1 className="mb-6 mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            {t("title1")}
+            {title.line1}
             <br />
             <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-              {t("title2")}
-              <br />
-              {t("title3")}
+              {title.line2}
             </span>
           </h1>
 

@@ -7,9 +7,15 @@
   },
   "hero": {
     "badge": "DISPONIBILE",
-    "title1": "Architecting",
-    "title2": "Digital",
-    "title3": "Intelligence",
+    "titles": [
+      { "line1": "Il tuo reparto IT,", "line2": "senza assumerlo." },
+      { "line1": "Meno lavoro manuale.", "line2": "Più crescita." },
+      { "line1": "Automatizza. Integra.", "line2": "Cresci." },
+      { "line1": "Tecnologia che", "line2": "lavora per te." },
+      { "line1": "Dal foglio Excel", "line2": "al processo automatico." },
+      { "line1": "Il gestionale non basta?", "line2": "Lo facciamo parlare." },
+      { "line1": "Software su misura.", "line2": "Risultati concreti." }
+    ],
     "description": "Specializzati in soluzioni white-label ad alte prestazioni, automazione AI e architetture IoT. Costruiamo la spina dorsale delle infrastrutture tecnologiche moderne.",
     "viewPortfolio": "Vedi Portfolio",
     "contactUs": "Contattami"
