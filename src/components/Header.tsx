@@ -57,14 +57,13 @@ export default function Header() {
         logoAlt="SendLine logo"
         logoHref={`/${locale}`}
         items={navItems}
-        baseColor="rgba(10, 10, 10, 0.85)"
         menuColor="#ffffff"
         buttonBgColor="#6d28d9"
         buttonTextColor="#ffffff"
         ctaLabel={t("startProject")}
         ctaHref={`/${locale}/contact`}
         extraContent={<LanguageSwitcher />}
-        className="backdrop-blur-xl"
+        className="backdrop-blur-xs"
       />
     </header>
   );
