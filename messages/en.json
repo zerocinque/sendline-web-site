@@ -6,29 +6,58 @@
     "startProject": "Start Project"
   },
   "hero": {
-    "badge": "AVAILABLE FOR HIRE",
+    "badge": "AVAILABLE",
     "titles": [
-      { "line1": "Architecting", "line2": "Digital Intelligence" },
-      { "line1": "Building", "line2": "Scalable Systems" },
-      { "line1": "Engineering", "line2": "Smart Solutions" },
-      { "line1": "Designing", "line2": "Future Infrastructure" }
+      {
+        "line1": "Your IT department,",
+        "line2": "without hiring one."
+      },
+      {
+        "line1": "Less manual work.",
+        "line2": "More growth."
+      },
+      {
+        "line1": "Automate. Integrate.",
+        "line2": "Grow."
+      },
+      {
+        "line1": "Technology that",
+        "line2": "works for you."
+      },
+      {
+        "line1": "From spreadsheets",
+        "line2": "to automated processes."
+      },
+      {
+        "line1": "Your ERP isn't enough?",
+        "line2": "I'll make it talk."
+      },
+      {
+        "line1": "Custom software.",
+        "line2": "Real results."
+      }
     ],
-    "description": "Specializing in high-performance white-label solutions, AI automation, and IoT architectures. Building the backbone of modern tech infrastructure.",
-    "viewPortfolio": "View Portfolio",
-    "contactUs": "Contact me"
+    "description": "Custom software development for SMBs and startups: from ERP integration, to order automation, to IoT monitoring of your facilities. Without the cost of an internal IT department.",
+    "viewPortfolio": "See what I've built",
+    "contactUs": "Let's talk about your project"
   },
   "techLogos": {
-    "title": "Technologies we use"
+    "title": "Technologies I use"
   },
   "about": {
     "badge": "ABOUT ME",
-    "title": "Software developer, technology partner",
-    "paragraph1": "I'm Luigi, a freelance software developer. I work with SMBs and startups that need real digital solutions: automation, ERP integrations, IoT monitoring, and custom web applications.",
-    "paragraph2": "I've gained experience in tech companies and industrial environments, where I learned that technology only works when it solves real problems. That's why I always start from the process, not the tool.",
-    "paragraph3": "I work as your single technical point of contact: from requirements gathering to deployment. No unnecessary meetings, no surprises. Just clean code and measurable results.",
+    "title": "> luigi@sendline:~$ whoami",
+    "paragraph1": "My name is Luigi. I wrote my first lines of code at technical school and never stopped. I worked as a Backend Developer at Deltatre, building platforms that served millions of users. Then as IT Manager at Rogelfrut, where I experienced firsthand what it means to make technology work in a real company — with limited budgets, daily emergencies, and software that won't talk to each other.",
+    "paragraph2": "The truth is that SMBs have serious technology problems but rarely find someone who solves them without overcomplicating everything. Big vendors are too expensive and too slow. Generic freelancers lack the big picture. What was needed was a middle ground: someone with real business experience, who develops concrete solutions and works side by side with you.",
+    "paragraph3": "That's why I founded SendLine. Automations, ERP integrations, IoT monitoring, AI chatbots — all custom-built, with a single point of contact and no middlemen. If you have a process that's slowing you down, I can probably automate it. If you have two systems that don't communicate, I'll make them talk.",
     "card": {
       "name": "Luigi",
-      "roles": ["Full-Stack Developer"],
+      "roles": [
+        "IT Consultant",
+        "Full-Stack Developer",
+        "IoT Engineer",
+        "AI Integrator"
+      ],
       "location": "Italy / Remote",
       "experience": "10+"
     }
@@ -54,40 +83,40 @@
     }
   },
   "specializations": {
-    "badge": "CORE COMPETENCIES",
+    "badge": "01. SERVICES",
     "title": "Technical Specializations",
     "ai": {
       "title": "AI Automation",
-      "description": "Custom machine learning pipelines and intelligent automation solutions to optimize business workflows."
+      "description": "Are repetitive processes stealing hours from your team? We automate manual work with AI solutions: order import from email, document classification, customer support chatbots. Fewer errors, more time to grow your business."
     },
     "erp": {
       "title": "ERP & BI Integrations",
-      "description": "Seamless integration with leading ERP systems and platforms for advanced data analytics."
+      "description": "Your ERP doesn't communicate with your e-commerce? Orders end up on Excel before reaching the system? We connect your software together — ERP, CRM, e-commerce, analytics tools — eliminating manual steps and data silos."
     },
     "iot": {
       "title": "IoT & Sensor Monitoring",
-      "description": "Real-time monitoring of IoT devices and sensors for industrial control and automation."
+      "description": "Temperature, humidity, energy consumption, machine status: we monitor everything in real time with IoT sensors, dedicated dashboards, and automatic alerts via Telegram, email, or SMS. You always know what's happening, even when you're away."
     }
   },
   "projects": {
-    "badge": "SELECTED WORKS",
+    "badge": "02. SELECTED WORKS",
     "title": "Featured Projects",
     "viewAll": "View All",
     "items": {
       "factory": {
-        "title": "Smart Factory Dashboard",
-        "description": "Real-time dashboard for manufacturing production monitoring, efficiency management and predictive analytics.",
-        "tags": "React,Node.js,IoT,AWS"
+        "title": "-18°C Cold Room Monitoring",
+        "description": "IoT system with LoRaWAN sensors, real-time Telegram alerts, Grafana dashboard. Sector: food & cold chain.",
+        "tags": "IoT,Node.js,PostgreSQL,LoRaWAN,Grafana,Telegram"
       },
       "supplychain": {
-        "title": "Supply Chain AI",
-        "description": "AI-powered logistics intelligence platform for supply chain optimization.",
-        "tags": "Python,TensorFlow,AWS,Docker"
+        "title": "B2B Order Portal",
+        "description": "Web platform for collecting customer orders with automatic ERP integration. Sector: distribution.",
+        "tags": "DotNetCore,Vuejs,Docker,MongoDB,Restful API integration"
       },
       "crm": {
-        "title": "White Label CRM",
-        "description": "Fully customizable white-label CRM for agencies and SaaS resellers.",
-        "tags": "Next.js,PostgreSQL,Stripe,Redis"
+        "title": "AI Chatbot on Knowledge Base",
+        "description": "RAG virtual assistant trained on company documentation. Sector: customer support.",
+        "tags": "Next.js,PostgreSQL,Redis,Agno,FastApi,QdrantDB"
       },
       "stealth": {
         "title": "Project Stealth",
@@ -97,10 +126,9 @@
     }
   },
   "stats": {
-    "projects": "Projects Completed",
-    "uptime": "Uptime Guaranteed",
-    "datapoints": "Data Processed",
-    "experience": "Years of Experience"
+    "projects": "years of IT experience in tech and industrial companies",
+    "uptime": "vertical specializations",
+    "experience": "From design to deploy, a single point of contact"
   },
   "faq": {
     "badge": "FAQ",
@@ -131,20 +159,20 @@
     }
   },
   "cta": {
-    "badge": "03. GET IN TOUCH",
-    "title": "Ready to initiate the protocol?",
-    "description": "Whether you need a custom white-label solution or an automated system to scale your operations, let's architect the future together.",
-    "nameLabel": "./input_name",
+    "badge": "03. CONTACT",
+    "title": "Have a process to automate or an idea to develop?",
+    "description": "Tell me about your project: let's figure out the best solution together. No commitment, just a conversation to understand how I can help.",
+    "nameLabel": "Your name",
     "namePlaceholder": "John Doe",
-    "emailLabel": "./input_email",
+    "emailLabel": "Your email",
     "emailPlaceholder": "john@example.com",
-    "messageLabel": "./input_message",
-    "messagePlaceholder": "Tell me about your project specs...",
-    "button": "Execute Transmission"
+    "messageLabel": "Your message",
+    "messagePlaceholder": "Tell me about your project...",
+    "button": "Send message"
   },
   "footer": {
     "company": "SendLine",
-    "description": "We architect high-performance digital infrastructure.",
+    "description": "Custom software, automations, and IoT for your business",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All protocols reserved.",
@@ -154,52 +182,51 @@
   "services": {
     "badge": "AVAILABLE FOR NEW CONTRACTS",
     "titles": [
-      { "line1": "Engineering Precision.", "line2": "Scalable Solutions." },
-      { "line1": "Your Tech Stack.", "line2": "Our Expertise." },
-      { "line1": "From Code to Cloud.", "line2": "End-to-End Delivery." },
-      { "line1": "Complex Problems.", "line2": "Clean Architecture." }
+      { "line1": "Every business has a process to automate.", "line2": "What's yours?" },
+      { "line1": "Complex problems.", "line2": "Simple solutions." },
+      { "line1": "What your ERP can't do,", "line2": "I build it." }
     ],
-    "description": "We architect high-performance digital infrastructure. From white-label SaaS development to industrial IoT monitoring, SendLine bridges the gap between hardware and software.",
-    "coreTitle": "Core Capabilities",
-    "coreSubtitle": "Technical expertise deployed for mission-critical systems.",
+    "description": "From a single automation that saves you hours every week, to complete monitoring and integration systems. Every solution is custom-built for the way you work.",
+    "coreTitle": "SendLine Services",
+    "coreSubtitle": "Concrete solutions for real problems.",
     "whiteLabel": {
       "title": "White Label Development",
-      "description": "Full-cycle software development delivered under your brand. We build scalable, clean, and documented codebases ready for handoff or long-term maintenance.",
-      "features": "SaaS Multi-tenant Scaling,API-First Architecture,Enterprise React Applications"
+      "description": "Have an idea for a software product but no development team? Or are you an agency that needs a reliable technical partner behind the scenes? I build complete applications you can resell or present under your own brand, as if they were made by your team. Clean, documented code ready to grow with you.",
+      "features": "Market-ready web and mobile apps|Your brand, my technology|Documented and maintainable code"
     },
     "ai": {
       "title": "AI & Process Automation",
-      "description": "Leveraging LLMs and custom automation scripts to automate repetitive tasks. We integrate intelligent agents into existing workflows to boost efficiency.",
-      "features": "Custom LLM Deployments,Workflow Automation (n8n, Zapier),Data Extraction & Processing"
+      "description": "Does your team spend hours copying data between systems, sorting emails, or answering the same questions? I build automations that do this work for them — with or without AI, depending on what's actually needed. Fewer errors, fewer wasted hours, more time for what matters.",
+      "features": "Automatic order import from email to ERP|AI chatbot trained on your company documentation|Automated reports, notifications, and data routing"
     },
     "bi": {
       "title": "BI & Systems Integration",
-      "description": "Connecting disparate systems to create a unified source of truth. We build custom dashboards and ETL pipelines that turn raw data into actionable insights.",
-      "features": "Custom Data Dashboards,Third-party API Integrations,Automated Reporting Systems"
+      "description": "Your ERP doesn't talk to your e-commerce? Sales data in one system and inventory in another? I create the connections between your software so data flows automatically, and I build dashboards where you see everything at a glance — without opening ten different programs.",
+      "features": "Integration between ERP, e-commerce, CRM, and analytics tools|Custom dashboards with the numbers that matter to you|Automated reports via email — data comes to you, you don't have to chase it"
     },
     "iot": {
       "title": "IoT & Industrial Monitoring",
-      "description": "Bridging the physical and digital worlds. We develop software for edge devices, sensors, and industrial controllers to enable real-time remote monitoring.",
-      "features": "MQTT / CoAP Protocols,Hardware Data Visualization,Edge Connectivity Systems"
+      "description": "Temperature, humidity, consumption, machine status — everything monitored in real time with sensors and dedicated dashboards. Receive automatic alerts via Telegram, email, or SMS when something goes out of range. You always know what's happening, even when you're not there.",
+      "features": "Low-power wireless sensors (LoRaWAN) — even in environments without WiFi|Real-time Grafana dashboards, accessible from PC and phone|Automatic alerts via Telegram, email, or SMS when a parameter goes out of range"
     },
     "caseStudy": {
       "badge": "CASE STUDY",
       "title": "Industrial Plant Telemetry",
-      "link": "View Project Details"
+      "link": "Project Details"
     },
     "techStack": {
       "title": "Technology Stack",
-      "subtitle": "The tools we use to build robust, scalable systems.",
+      "subtitle": "The technologies I work with every day.",
       "frontend": "FRONTEND & UI",
       "backend": "BACKEND & API",
-      "devops": "DEVOPS & CLOUD",
-      "iot": "IOT & HARDWARE"
+      "devops": "INFRASTRUCTURE & DEPLOY",
+      "iot": "IOT & SENSORS"
     },
     "cta": {
-      "title": "Ready to scale your infrastructure?",
-      "description": "Whether you need a full white-label solution or a specific IoT integration, SendLine delivers engineering excellence.",
-      "scheduleBtn": "Schedule Consultation",
-      "portfolioBtn": "View Portfolio"
+      "title": "Have a project in mind?",
+      "description": "Tell me what's not working or what you'd like to automate. A first introductory call is free and no-commitment.",
+      "scheduleBtn": "Let's talk about your project",
+      "portfolioBtn": "See what I've built"
     }
   },
   "notFound": {
@@ -211,26 +238,25 @@
     "contact": "CONTACT ME"
   },
   "contact": {
-    "title1": "Initiate",
-    "title2": "Sequence.",
-    "description": "Specializing in high-performance White-label Solutions, AI Automation, and IoT Architectures. Let's build the future, one line of code at a time.",
+    "title1": "Tell me what",
+    "title2": "you need",
+    "description": "Describe your problem or idea, I'll get back to you within 24 hours with an initial assessment. No commitment, no cost for the first consultation.",
     "email": "EMAIL",
     "emailValue": "luigi@sendline.it",
     "phone": "PHONE",
     "phoneValue": "+39 329 158 0729",
-    "location": "LOCATION",
-    "locationValue1": "Remote / Worldwide",
-    "locationValue2": "",
-    "social": "SOCIAL",
+    "location": "WHERE I WORK",
+    "locationValue1": "In person in Piedmont and Northern Italy.",
+    "locationValue2": "Remote for the rest of the world.",
+    "social": "CONNECT",
     "form": {
-      "title": "// REQUEST QUOTE",
+      "title": "// Tell me about your project",
       "name": "Full Name",
       "email": "Email",
       "projectType": "Project Type",
       "budget": "Budget",
       "message": "Describe your project...",
-      "status": "SYSTEM READY",
-      "submit": "SEND TRANSMISSION",
+      "submit": "send_request",
       "projectTypes": {
         "whiteLabel": "White Label",
         "ai": "AI Automation",
