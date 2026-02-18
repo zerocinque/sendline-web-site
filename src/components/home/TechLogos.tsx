@@ -19,8 +19,10 @@ import {
   SiNodedotjs,
   SiSqlite,
   SiQlik,
+  SiPostman,
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
+import { IoTerminalOutline } from "react-icons/io5";
 import LogoLoop from "../LogoLoop";
 
 const techLogos = [
@@ -36,6 +38,7 @@ const techLogos = [
   { node: <SiPostgresql />, title: "Postgresql" },
   { node: <SiMongodb />, title: "Mongodb" },
   { node: <SiGraphql />, title: "Graphql" },
+  { node: <SiPostman />, title: "Postman" },
   { node: <SiGrafana />, title: "Grafana" },
   { node: <SiN8N />, title: "n8n" },
   { node: <SiRedis />, title: "Redis" },
@@ -43,6 +46,7 @@ const techLogos = [
   { node: <SiSqlite />, title: "SQLite" },
   { node: <DiMsqlServer />, title: "MSSQL Server" },
   { node: <SiQlik />, title: "Qlik" },
+  { node: <IoTerminalOutline />, title: "Terminal" },
 ];
 
 export default function TechLogos() {
@@ -50,7 +54,7 @@ export default function TechLogos() {
     <section className="border-y border-border bg-surface/50 py-6">
       <LogoLoop
         logos={techLogos}
-        speed={80}
+        speed={50}
         direction="left"
         logoHeight={24}
         gap={48}
