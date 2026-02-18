@@ -171,7 +171,10 @@
     "emailPlaceholder": "mario@esempio.com",
     "messageLabel": "Il tuo messaggio",
     "messagePlaceholder": "Raccontami il tuo progetto...",
-    "button": "Invia messaggio"
+    "button": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato! Ti risponderò al più presto.",
+    "error": "Errore nell'invio. Riprova o scrivi a luigi@sendline.it."
   },
   "footer": {
     "company": "SendLine",
@@ -260,6 +263,9 @@
       "budget": "Budget",
       "message": "Descrivi il tuo progetto...",
       "submit": "invia_richiesta",
+      "sending": "invio_in_corso...",
+      "success": "Messaggio inviato! Ti risponderò al più presto.",
+      "error": "Errore nell'invio. Riprova o scrivi a luigi@sendline.it.",
       "projectTypes": {
         "whiteLabel": "White Label",
         "ai": "Automazione AI",

@@ -1,9 +1,37 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function CTASection() {
   const t = useTranslations("cta");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+
+      if (!res.ok) throw new Error();
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
+  };
 
   return (
     <section className="relative overflow-hidden bg-surface py-24" id="contact">
@@ -19,7 +47,7 @@ export default function CTASection() {
 
         <form
           className="rounded-lg border border-border bg-black/50 p-8 text-left backdrop-blur-sm"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
         >
           <div className="mb-6 grid gap-6 md:grid-cols-2">
             <div>
@@ -28,6 +56,8 @@ export default function CTASection() {
               </label>
               <input
                 type="text"
+                name="name"
+                required
                 placeholder={t("namePlaceholder")}
                 className="w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
               />
@@ -38,6 +68,9 @@ export default function CTASection() {
               </label>
               <input
                 type="email"
+                name="email"
+                required
+                pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
                 placeholder={t("emailPlaceholder")}
                 className="w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
               />
@@ -49,6 +82,8 @@ export default function CTASection() {
               {t("messageLabel")}
             </label>
             <textarea
+              name="message"
+              required
               placeholder={t("messagePlaceholder")}
               className="h-32 w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
             />
@@ -56,7 +91,8 @@ export default function CTASection() {
 
           <button
             type="submit"
-            className="flex w-full items-center justify-center gap-2 rounded bg-primary py-4 font-mono text-white transition-colors hover:bg-primary-hover"
+            disabled={status === "loading"}
+            className="flex w-full items-center justify-center gap-2 rounded bg-primary py-4 font-mono text-white transition-colors hover:bg-primary-hover disabled:opacity-50"
           >
             <svg
               className="h-4 w-4"
@@ -71,8 +107,19 @@ export default function CTASection() {
                 d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
               />
             </svg>
-            {t("button")}
+            {status === "loading" ? t("sending") : t("button")}
           </button>
+
+          {status === "success" && (
+            <p className="mt-4 text-center font-mono text-sm text-green-400">
+              {t("success")}
+            </p>
+          )}
+          {status === "error" && (
+            <p className="mt-4 text-center font-mono text-sm text-red-400">
+              {t("error")}
+            </p>
+          )}
         </form>
       </div>
     </section>

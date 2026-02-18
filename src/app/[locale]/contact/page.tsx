@@ -12,9 +12,25 @@ export default function ContactPage() {
     budget: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error();
+      setStatus("success");
+      setFormData({ name: "", email: "", projectType: "", budget: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -120,7 +136,7 @@ export default function ContactPage() {
                   </p>
                   <p className="text-lg font-medium text-white">
                     {t("locationValue1")}
-                  </p>                  
+                  </p>
                   <p className="text-lg font-medium text-white">
                     {t("locationValue2")}
                   </p>
@@ -183,6 +199,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     placeholder={t("form.name")}
+                    required
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -192,6 +209,8 @@ export default function ContactPage() {
                   <input
                     type="email"
                     placeholder={t("form.email")}
+                    required
+                    pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -265,6 +284,7 @@ export default function ContactPage() {
 
                 <textarea
                   placeholder={t("form.message")}
+                  required
                   rows={5}
                   value={formData.message}
                   onChange={(e) =>
@@ -274,12 +294,24 @@ export default function ContactPage() {
                 />
               </div>
 
-              <div className="mt-8 flex items-center justify-end">
+              <div className="mt-8 flex items-center justify-between">
+                {status === "success" && (
+                  <p className="font-mono text-sm text-green-400">
+                    {t("form.success")}
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="font-mono text-sm text-red-400">
+                    {t("form.error")}
+                  </p>
+                )}
+                {status !== "success" && status !== "error" && <div />}
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3 font-mono text-sm font-medium text-white transition-colors hover:bg-primary-hover"
+                  disabled={status === "loading"}
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3 font-mono text-sm font-medium text-white transition-colors hover:bg-primary-hover disabled:opacity-50"
                 >
-                  {t("form.submit")} ▶
+                  {status === "loading" ? t("form.sending") : t("form.submit")} ▶
                 </button>
               </div>
             </form>

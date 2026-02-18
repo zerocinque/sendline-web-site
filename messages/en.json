@@ -171,7 +171,10 @@
     "emailPlaceholder": "john@example.com",
     "messageLabel": "Your message",
     "messagePlaceholder": "Tell me about your project...",
-    "button": "Send message"
+    "button": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Failed to send. Please try again or email luigi@sendline.it."
   },
   "footer": {
     "company": "SendLine",
@@ -269,6 +272,9 @@
       "budget": "Budget",
       "message": "Describe your project...",
       "submit": "send_request",
+      "sending": "sending...",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Failed to send. Please try again or email luigi@sendline.it.",
       "projectTypes": {
         "whiteLabel": "White Label",
         "ai": "AI Automation",
