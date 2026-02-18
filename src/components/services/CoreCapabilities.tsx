@@ -53,7 +53,7 @@ export default function CoreCapabilities() {
               key={service.key}
               title={t(`${service.key}.title`)}
               description={t(`${service.key}.description`)}
-              features={t(`${service.key}.features`).split(",")}
+              features={t(`${service.key}.features`).split("|")}
               icon={service.icon}
             />
           ))}

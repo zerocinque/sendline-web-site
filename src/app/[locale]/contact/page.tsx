@@ -119,7 +119,10 @@ export default function ContactPage() {
                     {t("location")}
                   </p>
                   <p className="text-lg font-medium text-white">
-                    {t("locationValue")}
+                    {t("locationValue1")}
+                  </p>                  
+                  <p className="text-lg font-medium text-white">
+                    {t("locationValue2")}
                   </p>
                 </div>
               </div>
@@ -271,13 +274,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              <div className="mt-8 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-green-500" />
-                  <span className="font-mono text-xs tracking-wider text-muted">
-                    {t("form.status")}
-                  </span>
-                </div>
+              <div className="mt-8 flex items-center justify-end">
                 <button
                   type="submit"
                   className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3 font-mono text-sm font-medium text-white transition-colors hover:bg-primary-hover"

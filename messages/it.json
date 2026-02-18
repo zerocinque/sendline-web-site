@@ -181,32 +181,33 @@
   },
   "services": {
     "badge": "DISPONIBILE PER NUOVI CONTRATTI",
-    "title1": "Engineering",
-    "title2": "Precision",
-    "title3": "Scalable",
-    "title4": "Solutions",
-    "description": "Progettiamo infrastrutture digitali ad alte prestazioni. Dallo sviluppo white-label al monitoraggio IoT industriale, SendLine colma il divario tra hardware e software.",
-    "coreTitle": "Core Capabilities",
-    "coreSubtitle": "Competenze tecniche implementate per sistemi mission-critical.",
+    "titles": [
+      { "line1": "Ogni azienda ha un processo da automatizzare.", "line2": "Qual è il tuo?" },
+      { "line1": "Problemi complessi.", "line2": "Soluzioni semplici." },
+      { "line1": "Quello che il gestionale non fa,", "line2": "lo costruisco io." }
+    ],
+    "description": "Dalla singola automazione che ti fa risparmiare ore ogni settimana, fino a sistemi completi di monitoraggio e integrazione. Ogni soluzione è costruita su misura per il tuo modo di lavorare.",
+    "coreTitle": "I servizi di SendLine",
+    "coreSubtitle": "Soluzioni concrete per problemi reali.",
     "whiteLabel": {
       "title": "Sviluppo White Label",
-      "description": "Sviluppo software completo consegnato sotto il tuo brand. Costruiamo codebase scalabili, pulite e documentate, pronte per il passaggio o la manutenzione a lungo termine.",
-      "features": "Scalabilità SaaS Multi-tenant,Architettura API-First,Applicazioni React Enterprise"
+      "description": "Hai un'idea per un software ma non hai un team di sviluppo? Oppure sei un'agenzia che ha bisogno di un partner tecnico affidabile dietro le quinte? Sviluppo applicazioni complete che puoi rivendere o presentare con il tuo brand, come se fossero state fatte dal tuo team. Codice pulito, documentato e pronto per crescere con te.",
+      "features": "App web e mobile pronte per il mercato|Il tuo brand, la mia tecnologia|Codice documentato e facile da mantenere"
     },
     "ai": {
       "title": "AI & Automazione Processi",
-      "description": "Sfruttiamo LLM e script di automazione personalizzati per automatizzare attività ripetitive. Integriamo agenti intelligenti nei workflow esistenti per aumentare l'efficienza.",
-      "features": "Deployment LLM Personalizzati,Automazione Workflow (n8n, Zapier),Estrazione & Elaborazione Dati"
+      "description": "Il tuo team passa ore a copiare dati da un sistema all'altro, smistare email, o rispondere alle stesse domande? Costruisco automazioni che fanno questo lavoro al posto loro — con o senza intelligenza artificiale, a seconda di quello che serve davvero. Meno errori, meno ore perse, più tempo per quello che conta.",
+      "features": "Importazione automatica ordini da email nel gestionale|Chatbot AI addestrato sulla tua documentazione aziendale|Automazione di report, notifiche e smistamento dati"
     },
     "bi": {
       "title": "Integrazione BI & Sistemi",
-      "description": "Colleghiamo sistemi disparati per creare un'unica fonte di verità. Costruiamo dashboard personalizzate e pipeline ETL che trasformano dati grezzi in insight azionabili.",
-      "features": "Dashboard Dati Personalizzate,Integrazioni API di Terze Parti,Sistemi di Reporting Automatizzati"
+      "description": "Il gestionale non parla con l'e-commerce? I dati di vendita sono in un sistema e quelli di magazzino in un altro? Creo i collegamenti tra i tuoi software così che i dati fluiscano automaticamente, e costruisco cruscotti dove vedi tutto in un colpo d’occhio — senza aprire dieci programmi diversi.",
+      "features": "Integrazione tra gestionale, e-commerce, CRM e strumenti di analisi|Dashboard personalizzate con i numeri che contano per te|Report automatici via email — i dati ti arrivano, non devi andarli a cercare"
     },
     "iot": {
       "title": "IoT & Monitoraggio Industriale",
-      "description": "Colleghiamo il mondo fisico e digitale. Sviluppiamo software per dispositivi edge, sensori e controllori industriali per abilitare il monitoraggio remoto in tempo reale.",
-      "features": "Protocolli MQTT / CoAP,Visualizzazione Dati Hardware,Sistemi di Connettività Edge"
+      "description": "Temperature, umidità, consumi, stato dei macchinari — tutto monitorato in tempo reale con sensori e dashboard dedicati. Ricevi allarmi automatici su Telegram, email o SMS quando qualcosa esce dai parametri. Sai sempre cosa succede in azienda, anche quando non ci sei.",
+      "features": "Sensori wireless a basso consumo (LoRaWAN) — anche in ambienti senza WiFi|Dashboard in tempo reale su Grafana, accessibile da PC e telefono|Allarmi automatici via Telegram, email o SMS quando un parametro esce norma"
     },
     "caseStudy": {
       "badge": "CASE STUDY",
@@ -214,18 +215,18 @@
       "link": "Dettagli Progetto"
     },
     "techStack": {
-      "title": "Technology Stack",
-      "subtitle": "Gli strumenti che utilizziamo per costruire sistemi robusti e scalabili.",
+      "title": "Stack Tecnologico",
+      "subtitle": "Le tecnologie con cui lavoro ogni giorno.",
       "frontend": "FRONTEND & UI",
       "backend": "BACKEND & API",
-      "devops": "DEVOPS & CLOUD",
-      "iot": "IOT & HARDWARE"
+      "devops": "INFRASTRUTTURA & DEPLOY",
+      "iot": "IOT & SENSORI"
     },
     "cta": {
-      "title": "Pronto a scalare la tua infrastruttura?",
-      "description": "Che tu abbia bisogno di una soluzione white-label completa o di un'integrazione IoT specifica, SendLine offre eccellenza ingegneristica.",
-      "scheduleBtn": "Prenota Consulenza",
-      "portfolioBtn": "Vedi Portfolio"
+      "title": "Hai un progetto in mente?",
+      "description": "Raccontami cosa non funziona o cosa vorresti automatizzare. Una prima chiamata conoscitiva è gratuita e senza impegno.",
+      "scheduleBtn": "Parliamo del tuo progetto",
+      "portfolioBtn": "Guarda cosa ho realizzato"
     }
   },
   "notFound": {
@@ -237,25 +238,25 @@
     "contact": "CONTATTAMI"
   },
   "contact": {
-    "title1": "Initiate",
-    "title2": "Sequence.",
-    "description": "Specializzati in soluzioni White-label ad alte prestazioni, Automazione AI e Architetture IoT. Costruiamo il futuro, una riga di codice alla volta.",
-    "directChannel": "CANALE DIRETTO",
+    "title1": "Raccontami cosa",
+    "title2": "ti serve",
+    "description": "Descrivimi il problema o l'idea, ti rispondo entro 24 ore con una prima valutazione. Nessun impegno, nessun costo per la prima consulenza.",
+    "directChannel": "EMAIL",
     "email": "luigi@sendline.it",
     "phone": "TELEFONO",
     "phoneValue": "+39 329 158 0729",
-    "location": "POSIZIONE",
-    "locationValue": "Remoto / Worldwide",
-    "networkUplinks": "NETWORK UPLINKS",
+    "location": "DOVE LAVORO",
+    "locationValue1": "Di persona in Piemonte e Nord Italia.",
+    "locationValue2": "Da remoto nel resto del mondo.",
+    "networkUplinks": "CONNETTITI",
     "form": {
-      "title": "// REQUEST QUOTE",
+      "title": "// Raccontami il tuo progetto",
       "name": "Nome Completo",
       "email": "Email",
       "projectType": "Tipo Progetto",
       "budget": "Budget",
       "message": "Descrivi il tuo progetto...",
-      "status": "SISTEMA PRONTO",
-      "submit": "INVIA TRASMISSIONE",
+      "submit": "invia_richiesta",
       "projectTypes": {
         "whiteLabel": "White Label",
         "ai": "Automazione AI",

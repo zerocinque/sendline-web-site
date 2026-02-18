@@ -153,10 +153,12 @@
   },
   "services": {
     "badge": "AVAILABLE FOR NEW CONTRACTS",
-    "title1": "Engineering",
-    "title2": "Precision",
-    "title3": "Scalable",
-    "title4": "Solutions",
+    "titles": [
+      { "line1": "Engineering Precision.", "line2": "Scalable Solutions." },
+      { "line1": "Your Tech Stack.", "line2": "Our Expertise." },
+      { "line1": "From Code to Cloud.", "line2": "End-to-End Delivery." },
+      { "line1": "Complex Problems.", "line2": "Clean Architecture." }
+    ],
     "description": "We architect high-performance digital infrastructure. From white-label SaaS development to industrial IoT monitoring, SendLine bridges the gap between hardware and software.",
     "coreTitle": "Core Capabilities",
     "coreSubtitle": "Technical expertise deployed for mission-critical systems.",

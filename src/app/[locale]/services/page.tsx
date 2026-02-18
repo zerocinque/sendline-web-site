@@ -9,7 +9,7 @@ export default function ServicesPage() {
     <>
       <ServicesHero />
       <CoreCapabilities />
-      <CaseStudy />
+      {/* <CaseStudy /> */}
       <TechnologyStack />
       <ServicesCTA />
     </>

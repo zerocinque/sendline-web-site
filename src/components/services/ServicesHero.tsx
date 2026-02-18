@@ -1,9 +1,22 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
+import { useState } from "react";
+import TextType from "@/components/TextType";
 
 export default function ServicesHero() {
   const t = useTranslations("services");
+  const messages = useMessages();
+  const titles = (messages as Record<string, Record<string, Array<{ line1: string; line2: string }>>>).services.titles;
+
+  const [title] = useState(() => titles[Math.floor(Math.random() * titles.length)]);
+  const line2Delay = (title.line1.length + 1) * 50;
+
+  const longestTitle = titles.reduce((longest, t) => {
+    const currentLen = t.line1.length + t.line2.length;
+    const longestLen = longest.line1.length + longest.line2.length;
+    return currentLen > longestLen ? t : longest;
+  }, titles[0]);
 
   return (
     <section className="relative pt-32 pb-20">
@@ -15,11 +28,38 @@ export default function ServicesHero() {
           <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
           {t("badge")}
         </span>
-        <h1 className="mb-6 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-          <span className="whitespace-nowrap">{t("title1")}{" "}<span className="text-primary">{t("title2")}</span>.</span>
-          <br />
-          <span className="whitespace-nowrap"><span className="text-primary">{t("title3")}</span>{" "}{t("title4")}.</span>
-        </h1>
+
+        <div className="relative mb-6 mt-6 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
+          {/* Invisible placeholder to reserve space */}
+          <span className="invisible" aria-hidden="true">
+            {longestTitle.line1}
+            <br />
+            {longestTitle.line2}
+          </span>
+          {/* Typed text overlaid on top */}
+          <span className="absolute inset-0" suppressHydrationWarning>
+            <TextType
+              text={title.line1}
+              as="span"
+              typingSpeed={50}
+              loop={false}
+              showCursor={false}
+              cursorCharacter="_"
+            />
+            <br />
+            <TextType
+              text={title.line2}
+              as="span"
+              className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent"
+              typingSpeed={50}
+              initialDelay={line2Delay}
+              loop={false}
+              cursorCharacter="_"
+              cursorClassName="animate-pulse text-primary"
+            />
+          </span>
+        </div>
+
         <p className="max-w-2xl text-base text-muted sm:text-lg">
           {t("description")}
         </p>
