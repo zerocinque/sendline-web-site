@@ -42,7 +42,7 @@
     "contactUs": "Parliamo del tuo progetto"
   },
   "techLogos": {
-    "title": "Tecnologie che utilizziamo"
+    "title": "Tecnologie che utilizzo"
   },
   "about": {
     "badge": "CHI SONO",
@@ -241,14 +241,14 @@
     "title1": "Raccontami cosa",
     "title2": "ti serve",
     "description": "Descrivimi il problema o l'idea, ti rispondo entro 24 ore con una prima valutazione. Nessun impegno, nessun costo per la prima consulenza.",
-    "directChannel": "EMAIL",
-    "email": "luigi@sendline.it",
+    "email": "EMAIL",
+    "emailValue": "luigi@sendline.it",
     "phone": "TELEFONO",
     "phoneValue": "+39 329 158 0729",
     "location": "DOVE LAVORO",
     "locationValue1": "Di persona in Piemonte e Nord Italia.",
     "locationValue2": "Da remoto nel resto del mondo.",
-    "networkUplinks": "CONNETTITI",
+    "social": "CONNETTITI",
     "form": {
       "title": "// Raccontami il tuo progetto",
       "name": "Nome Completo",

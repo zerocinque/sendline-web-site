@@ -56,13 +56,13 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-mono text-xs tracking-widest text-muted">
-                    {t("directChannel")}
+                    {t("email")}
                   </p>
                   <a
                     href="mailto:luigi@sendline.it"
                     className="text-lg font-medium text-white transition-colors hover:text-primary"
                   >
-                    {t("email")}
+                    {t("emailValue")}
                   </a>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
 
             <div className="mt-12 border-t border-border pt-8">
               <p className="mb-4 font-mono text-xs tracking-widest text-muted">
-                {t("networkUplinks")}
+                {t("social")}
               </p>
               <div className="flex gap-4">
                 {[
