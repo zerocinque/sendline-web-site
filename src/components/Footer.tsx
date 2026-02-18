@@ -59,7 +59,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://github.com/sendline"
+                  href="https://github.com/zerocinque"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground transition-colors hover:text-primary"
@@ -69,7 +69,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/company/sendline"
+                  href="https://www.linkedin.com/in/luigi-bottasso"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground transition-colors hover:text-primary"
