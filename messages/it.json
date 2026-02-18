@@ -9,7 +9,7 @@
     "contact": "Contatti"
   },
   "hero": {
-    "badge": "DISPONIBILE",
+    "badge": "DISPONIBILE PER NUOVI CONTRATTI",
     "titles": [
       {
         "line1": "Il tuo reparto IT,",
@@ -48,7 +48,7 @@
     "title": "Tecnologie che utilizzo"
   },
   "about": {
-    "badge": "CHI SONO",
+    "badge": "02. CHI SONO",
     "title": "> luigi@sendline:~$ whoami",
     "paragraph1": "Mi chiamo Luigi. Ho scritto le mie prime righe di codice all'istituto tecnico e da lì non ho più smesso. Ho fatto il Backend Developer in Deltatre, lavorando su piattaforme che servivano milioni di utenti. Poi il Responsabile IT in Rogelfrut, dove ho toccato con mano cosa significa far funzionare la tecnologia in un'azienda reale — con budget limitati, urgenze quotidiane e software che non vogliono parlarsi.",
     "paragraph2": "La verità è che le PMI hanno problemi tecnologici seri ma raramente trovano qualcuno che li risolva senza complicare tutto. I grandi fornitori sono troppo costosi e troppo lenti. I freelancer generici non hanno la visione d'insieme. Serviva una via di mezzo: qualcuno con esperienza aziendale reale, che sviluppa soluzioni concrete e lavora fianco a fianco con te.",
@@ -66,7 +66,7 @@
     }
   },
   "howIWork": {
-    "badge": "IL MIO METODO",
+    "badge": "03. IL MIO METODO",
     "title": "Come lavoro",
     "listen": {
       "title": "Ascolto",
@@ -102,7 +102,7 @@
     }
   },
   "projects": {
-    "badge": "02. LAVORI SELEZIONATI",
+    "badge": "04. LAVORI SELEZIONATI",
     "title": "Progetti in Evidenza",
     "viewAll": "Vedi Tutti",
     "items": {
@@ -134,7 +134,7 @@
     "experience": "Dalla progettazione al deploy, un unico interlocutore"
   },
   "faq": {
-    "badge": "FAQ",
+    "badge": "05. FAQ",
     "title": "Domande frequenti",
     "cost": {
       "question": "Quanto costa un progetto?",
@@ -162,7 +162,7 @@
     }
   },
   "cta": {
-    "badge": "03. CONTATTI",
+    "badge": "06. CONTATTI",
     "title": "Hai un processo da automatizzare o un’idea da sviluppare?",
     "description": "Raccontami il tuo progetto: analizziamo insieme la soluzione migliore. Nessun impegno, solo una conversazione per capire come posso aiutarti.",
     "nameLabel": "Il tuo nome",
