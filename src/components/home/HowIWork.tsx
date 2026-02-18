@@ -40,7 +40,7 @@ export default function HowIWork() {
   const t = useTranslations("howIWork");
 
   return (
-    <section className="py-24">
+    <section id="method" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <span className="mb-4 inline-block font-mono text-xs tracking-widest text-primary">
           {t("badge")}

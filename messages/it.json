@@ -1,9 +1,12 @@
 {
   "nav": {
     "projects": "Progetti",
+    "method": "Metodo di lavoro",
+    "faq": "FAQ",
     "services": "Servizi",
-    "contact": "Contatti",
-    "startProject": "Inizia Progetto"
+    "stack": "Stack tecnologico",
+    "whoami": "Chi sono?",
+    "contact": "Contatti"
   },
   "hero": {
     "badge": "DISPONIBILE",

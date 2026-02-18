@@ -1,9 +1,12 @@
 {
   "nav": {
     "projects": "Projects",
+    "method": "How I work",
+    "faq": "FAQ",
     "services": "Services",
-    "contact": "Contact",
-    "startProject": "Start Project"
+    "stack": "Technology Stack",
+    "whoami": "Who am I?",
+    "contact": "Contact"
   },
   "hero": {
     "badge": "AVAILABLE",
@@ -182,9 +185,18 @@
   "services": {
     "badge": "AVAILABLE FOR NEW CONTRACTS",
     "titles": [
-      { "line1": "Every business has a process to automate.", "line2": "What's yours?" },
-      { "line1": "Complex problems.", "line2": "Simple solutions." },
-      { "line1": "What your ERP can't do,", "line2": "I build it." }
+      {
+        "line1": "Every business has a process to automate.",
+        "line2": "What's yours?"
+      },
+      {
+        "line1": "Complex problems.",
+        "line2": "Simple solutions."
+      },
+      {
+        "line1": "What your ERP can't do,",
+        "line2": "I build it."
+      }
     ],
     "description": "From a single automation that saves you hours every week, to complete monitoring and integration systems. Every solution is custom-built for the way you work.",
     "coreTitle": "SendLine Services",

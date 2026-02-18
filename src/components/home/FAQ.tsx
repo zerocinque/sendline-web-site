@@ -17,7 +17,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-24">
+    <section id="faq"className="py-24">
       <div className="mx-auto max-w-3xl px-6">
         <span className="mb-4 inline-block font-mono text-xs tracking-widest text-primary">
           {t("badge")}

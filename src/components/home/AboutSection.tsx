@@ -4,9 +4,11 @@ export default function AboutSection() {
   const t = useTranslations("about");
   const messages = useMessages();
   const roles = (messages as Record<string, { card: { roles: string[] } }>).about.card.roles;
-
+  const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - 2017;
+  
   return (
-    <section className="py-24">
+    <section id="whoami" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <span className="mb-4 inline-block font-mono text-xs tracking-widest text-primary">
           {t("badge")}
@@ -52,7 +54,7 @@ export default function AboutSection() {
                   location: <span className="text-green-400">{`"${t("card.location")}"`}</span>,
                 </p>
                 <p className="pl-4">
-                  experience: <span className="text-yellow-400">{t("card.experience")}</span>,
+                  experience: <span className="text-yellow-400">{experienceYears}+</span>,
                 </p>
                 <p className="pl-4">
                   available: <span className="text-green-500">true</span>,

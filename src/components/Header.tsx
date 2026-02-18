@@ -21,6 +21,14 @@ export default function Header() {
           label: t("projects"),
           href: `/${locale}#projects`,
           ariaLabel: t("projects"),
+        }, {
+          label: t("method"),
+          href: `/${locale}#method`,
+          ariaLabel: t("method"),
+        }, {
+          label: t("faq"),
+          href: `/${locale}#faq`,
+          ariaLabel: t("faq"),
         },
       ],
     },
@@ -33,6 +41,10 @@ export default function Header() {
           label: t("services"),
           href: `/${locale}/services`,
           ariaLabel: t("services"),
+        }, {
+          label: t("stack"),
+          href: `/${locale}/services#stack`,
+          ariaLabel: t("stack"),
         },
       ],
     },
@@ -45,6 +57,11 @@ export default function Header() {
           label: t("contact"),
           href: `/${locale}/contact`,
           ariaLabel: t("contact"),
+        },
+        {
+          label: t("whoami"),
+          href: `/${locale}#whoami`,
+          ariaLabel: t("whoami"),
         },
       ],
     },
@@ -60,7 +77,6 @@ export default function Header() {
         menuColor="#ffffff"
         buttonBgColor="#6d28d9"
         buttonTextColor="#ffffff"
-        ctaLabel={t("startProject")}
         ctaHref={`/${locale}/contact`}
         extraContent={<LanguageSwitcher />}
         className="backdrop-blur-xs"

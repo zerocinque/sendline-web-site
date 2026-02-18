@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import {
   SiReact,
@@ -56,8 +56,19 @@ export default function TechnologyStack() {
   const t = useTranslations("services");
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    const openIfHash = () => {
+      if (window.location.hash === "#stack") {
+        setOpen(true);
+      }
+    };
+    openIfHash();
+    window.addEventListener("hashchange", openIfHash);
+    return () => window.removeEventListener("hashchange", openIfHash);
+  }, []);
+
   return (
-    <section className="bg-surface/50 py-24">
+    <section id="stack" className="bg-surface/50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <button
           onClick={() => setOpen(!open)}

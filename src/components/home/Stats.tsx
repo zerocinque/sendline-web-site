@@ -2,9 +2,11 @@ import { useTranslations } from "next-intl";
 
 export default function Stats() {
   const t = useTranslations("stats");
+  const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - 2017;
 
   const stats = [
-    { value: "8+", label: t("projects") },
+    { value: experienceYears+"+", label: t("projects") },
     { value: "3", label: t("uptime") },
     { value: "1", label: t("experience") },
   ];
