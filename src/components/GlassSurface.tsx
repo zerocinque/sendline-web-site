@@ -37,6 +37,7 @@ export interface GlassSurfaceProps {
     | 'luminosity'
     | 'plus-darker'
     | 'plus-lighter';
+  darkMode?: boolean;
   className?: string;
   style?: React.CSSProperties;
 }
@@ -77,6 +78,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   xChannel = 'R',
   yChannel = 'G',
   mixBlendMode = 'difference',
+  darkMode,
   className = '',
   style = {}
 }) => {
@@ -86,7 +88,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   const blueGradId = `blue-grad-${uniqueId}`;
 
   const [svgSupported, setSvgSupported] = useState<boolean>(false);
-  const [backdropSupported, setBackdropSupported] = useState<boolean>(false);
+  const [backdropSupported, setBackdropSupported] = useState<boolean>(true);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const feImageRef = useRef<SVGFEImageElement>(null);
@@ -95,7 +97,8 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   const blueChannelRef = useRef<SVGFEDisplacementMapElement>(null);
   const gaussianBlurRef = useRef<SVGFEGaussianBlurElement>(null);
 
-  const isDarkMode = useDarkMode();
+  const autoDetectedDark = useDarkMode();
+  const isDarkMode = darkMode ?? autoDetectedDark;
 
   const generateDisplacementMap = () => {
     const rect = containerRef.current?.getBoundingClientRect();

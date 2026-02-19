@@ -30,6 +30,7 @@ export interface CardNavProps {
   ctaLabel?: string;
   ctaHref?: string;
   extraContent?: React.ReactNode;
+  darkMode?: boolean;
 }
 
 const CardNav: React.FC<CardNavProps> = ({
@@ -44,7 +45,8 @@ const CardNav: React.FC<CardNavProps> = ({
   buttonTextColor,
   ctaLabel,
   ctaHref,
-  extraContent
+  extraContent,
+  darkMode
 }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -195,6 +197,7 @@ const CardNav: React.FC<CardNavProps> = ({
           brightness={20}
           opacity={0.98}
           saturation={1.2}
+          darkMode={darkMode}
           className="!absolute inset-0 z-0"
           style={{ position: 'absolute', inset: 0 }}
         />
@@ -219,7 +222,7 @@ const CardNav: React.FC<CardNavProps> = ({
             />
           </div>
 
-          <Link href={logoHref} className="logo-container flex items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <Link href={logoHref} onClick={resetMenu} className="logo-container flex items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <img src={logo} alt={logoAlt} className="logo h-[28px]" />
             SendLine
           </Link>

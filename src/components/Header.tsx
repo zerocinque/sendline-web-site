@@ -79,6 +79,7 @@ export default function Header() {
         buttonTextColor="#ffffff"
         ctaHref={`/${locale}/contact`}
         extraContent={<LanguageSwitcher />}
+        darkMode={true}
         className="backdrop-blur-xs"
       />
     </header>
