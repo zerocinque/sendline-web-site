@@ -3,6 +3,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/Header";
@@ -38,6 +39,10 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={ibmPlexMono.className}>
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+          strategy="afterInteractive"
+        />
         <div className="fixed inset-0 z-0">
           <DotGrid
             dotSize={5}

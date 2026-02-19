@@ -15,6 +15,15 @@ export default function CTASection() {
     const formData = new FormData(form);
 
     try {
+      const recaptchaToken = await new Promise<string>((resolve, reject) => {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha
+            .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!, { action: "contact" })
+            .then(resolve)
+            .catch(reject);
+        });
+      });
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -22,6 +31,7 @@ export default function CTASection() {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
+          recaptchaToken,
         }),
       });
 
