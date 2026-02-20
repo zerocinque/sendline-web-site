@@ -291,11 +291,11 @@
     "lastUpdated": "Ultimo aggiornamento: 20 febbraio 2026",
     "controller": {
       "title": "1. Titolare del trattamento",
-      "content": "Il Titolare del trattamento dei dati è:\nLuigi Bottasso – SendLine\nEmail: luigi@sendline.it\nTelefono: +39 329 158 0729"
+      "content": "Il Titolare del trattamento dei dati è:\nBottasso Luigi di Luigi Bottasso\nSede: Via Rabaiot n.4 - 12030 Lagnasco (CN)\nP.IVA 04199610041 | C.F. BTTLGU95C05I470S\nEmail: luigi@sendline.it\nTelefono: +39 329 158 0729"
     },
     "dataCollected": {
       "title": "2. Dati personali raccolti",
-      "content": "Attraverso i moduli di contatto presenti sul sito raccogliamo: nome, indirizzo email, e il contenuto del messaggio inviato. Facoltativamente: tipo di progetto e budget indicativo. Raccogliamo inoltre dati tecnici tramite Vercel Analytics (dati di navigazione anonimi e conformi alla privacy) e Google reCAPTCHA (per la protezione anti-spam)."
+      "content": "Attraverso i moduli di contatto presenti sul sito raccogliamo: nome, indirizzo email, e il contenuto del messaggio inviato. Facoltativamente: tipo di progetto e budget indicativo. Raccogliamo inoltre dati tecnici quali indirizzo IP, tipo di browser, sistema operativo e pagine visitate, tramite i log del server e Vercel Analytics (servizio di analisi statistica che non utilizza cookie e tratta i dati in forma anonima e aggregata). Per la protezione anti-spam dei moduli di contatto utilizziamo Google reCAPTCHA, che può raccogliere dati tecnici relativi alla navigazione."
     },
     "purposes": {
       "title": "3. Finalità del trattamento",
@@ -303,7 +303,7 @@
     },
     "legalBasis": {
       "title": "4. Base giuridica del trattamento",
-      "content": "Il trattamento dei dati si basa sul consenso dell'interessato (art. 6, par. 1, lett. a del GDPR), espresso tramite la compilazione e l'invio del modulo di contatto, e sull'interesse legittimo del Titolare alla protezione anti-spam (art. 6, par. 1, lett. f del GDPR)."
+      "content": "Il trattamento dei dati si basa sulle seguenti basi giuridiche:\n• Consenso dell'interessato (art. 6, par. 1, lett. a del GDPR), espresso tramite la selezione dell'apposita casella e l'invio del modulo di contatto\n• Esecuzione di misure precontrattuali (art. 6, par. 1, lett. b del GDPR), per la gestione delle richieste di informazioni e preventivi\n• Legittimo interesse del Titolare (art. 6, par. 1, lett. f del GDPR), per le analisi statistiche anonime sul traffico del sito e la protezione anti-spam dei moduli di contatto."
     },
     "retention": {
       "title": "5. Durata della conservazione",
@@ -311,7 +311,7 @@
     },
     "sharing": {
       "title": "6. Condivisione dei dati",
-      "content": "I dati personali non vengono venduti a terzi. Possono essere condivisi con:\n• Vercel Inc. – per il servizio di hosting e analytics (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Google LLC – per il servizio reCAPTCHA (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Provider di servizi email – necessari per l'erogazione del servizio"
+      "content": "I dati personali non vengono venduti a terzi. Possono essere condivisi con i seguenti fornitori di servizi, necessari al funzionamento del sito:\n• Vercel Inc. (USA) - hosting del sito e analytics anonime. I dati possono essere trasferiti negli USA sulla base dell'EU-US Data Privacy Framework e delle Clausole Contrattuali Standard (SCC). Privacy policy: https://vercel.com/legal/privacy-policy\n• Google LLC (USA) - servizio reCAPTCHA per la protezione anti-spam. I dati possono essere trasferiti negli USA sulla base dell'EU-US Data Privacy Framework e delle Clausole Contrattuali Standard (SCC). Privacy policy: https://policies.google.com/privacy\n• Aruba S.p.a. - per la ricezione e gestione delle email di contatto. Privacy policy: https://www.aruba.it/documents/tc-files/it/11_it_privacy_policy_aruba_spa.aspx"
     },
     "rights": {
       "title": "7. Diritti dell'interessato",
@@ -319,7 +319,7 @@
     },
     "cookies": {
       "title": "8. Cookie e tecnologie di tracciamento",
-      "content": "Il sito utilizza:\n• Cookie tecnici – necessari per il funzionamento del sito\n• Vercel Analytics – per analisi statistiche anonime del traffico (non utilizza cookie e rispetta la privacy degli utenti)\n• Google reCAPTCHA – per la protezione anti-spam dei moduli\n\nPuoi gestire le preferenze sui cookie tramite le impostazioni del tuo browser."
+      "content": "Il sito utilizza le seguenti tecnologie:\nCookie tecnici — necessari per il corretto funzionamento del sito. Non richiedono il consenso dell'utente e non possono essere disattivati. Includono cookie di sessione e preferenze di navigazione (es. lingua selezionata).\nVercel Analytics — servizio di analisi statistica del traffico che non utilizza cookie, non raccoglie dati personali identificabili e tratta le informazioni in forma anonima e aggregata. Non richiede il consenso dell'utente.\nVercel Analytics — servizio di analisi statistica del traffico che non utilizza cookie, non raccoglie dati personali identificabili e tratta le informazioni in forma anonima e aggregata. Non richiede il consenso dell'utente.\nGoogle reCAPTCHA — servizio di protezione anti-spam fornito da Google LLC. Può installare cookie propri (tra cui _GRECAPTCHA e NID) e raccogliere dati tecnici relativi al browser e al comportamento di navigazione per distinguere gli utenti umani dai bot. Per maggiori informazioni: https://policies.google.com/privacy\nPuoi gestire le preferenze sui cookie tramite le impostazioni del tuo browser. La disattivazione dei cookie tecnici potrebbe compromettere la funzionalità del sito.\nCloudflare Turnstile — servizio di protezione anti-spam fornito da Cloudflare Inc., che non utilizza cookie di profilazione e opera nel rispetto del GDPR. Privacy policy: https://www.cloudflare.com/privacypolicy/"
     },
     "changes": {
       "title": "9. Modifiche all'informativa",

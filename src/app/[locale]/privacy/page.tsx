@@ -43,7 +43,7 @@ export default function PrivacyPage() {
             <h2 className="mb-3 text-lg font-semibold text-white">
               {t("legalBasis.title")}
             </h2>
-            <p>{t("legalBasis.content")}</p>
+            <p className="whitespace-pre-line">{t("legalBasis.content")}</p>
           </div>
 
           {/* 5. Conservazione */}
