@@ -288,18 +288,18 @@
   },
   "privacy": {
     "title": "Informativa sulla Privacy",
-    "lastUpdated": "Ultimo aggiornamento: 19 febbraio 2025",
+    "lastUpdated": "Ultimo aggiornamento: 20 febbraio 2026",
     "controller": {
       "title": "1. Titolare del trattamento",
       "content": "Il Titolare del trattamento dei dati è:\nLuigi Bottasso – SendLine\nEmail: luigi@sendline.it\nTelefono: +39 329 158 0729"
     },
     "dataCollected": {
       "title": "2. Dati personali raccolti",
-      "content": "Attraverso i moduli di contatto presenti sul sito raccogliamo: nome, indirizzo email, e il contenuto del messaggio inviato. Facoltativamente: tipo di progetto e budget indicativo. Raccogliamo inoltre dati tecnici tramite Google Analytics (dati di navigazione anonimi) e Google reCAPTCHA (per la protezione anti-spam)."
+      "content": "Attraverso i moduli di contatto presenti sul sito raccogliamo: nome, indirizzo email, e il contenuto del messaggio inviato. Facoltativamente: tipo di progetto e budget indicativo. Raccogliamo inoltre dati tecnici tramite Vercel Analytics (dati di navigazione anonimi e conformi alla privacy) e Google reCAPTCHA (per la protezione anti-spam)."
     },
     "purposes": {
       "title": "3. Finalità del trattamento",
-      "content": "I dati personali vengono trattati per le seguenti finalità:\n• Rispondere alle richieste di contatto e fornire informazioni sui servizi offerti\n• Gestire eventuali rapporti pre-contrattuali\n• Analisi statistiche anonime sul traffico del sito (Google Analytics)\n• Protezione anti-spam dei moduli di contatto (Google reCAPTCHA)"
+      "content": "I dati personali vengono trattati per le seguenti finalità:\n• Rispondere alle richieste di contatto e fornire informazioni sui servizi offerti\n• Gestire eventuali rapporti pre-contrattuali\n• Analisi statistiche anonime sul traffico del sito (Vercel Analytics)\n• Protezione anti-spam dei moduli di contatto (Google reCAPTCHA)"
     },
     "legalBasis": {
       "title": "4. Base giuridica del trattamento",
@@ -311,7 +311,7 @@
     },
     "sharing": {
       "title": "6. Condivisione dei dati",
-      "content": "I dati personali non vengono venduti a terzi. Possono essere condivisi con:\n• Google LLC – per i servizi Analytics e reCAPTCHA (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Provider di hosting e servizi email – necessari per l'erogazione del servizio"
+      "content": "I dati personali non vengono venduti a terzi. Possono essere condivisi con:\n• Vercel Inc. – per il servizio di hosting e analytics (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Google LLC – per il servizio reCAPTCHA (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Provider di servizi email – necessari per l'erogazione del servizio"
     },
     "rights": {
       "title": "7. Diritti dell'interessato",
@@ -319,7 +319,7 @@
     },
     "cookies": {
       "title": "8. Cookie e tecnologie di tracciamento",
-      "content": "Il sito utilizza:\n• Cookie tecnici – necessari per il funzionamento del sito\n• Google Analytics – per analisi statistiche anonime del traffico\n• Google reCAPTCHA – per la protezione anti-spam dei moduli\n\nPuoi gestire le preferenze sui cookie tramite le impostazioni del tuo browser."
+      "content": "Il sito utilizza:\n• Cookie tecnici – necessari per il funzionamento del sito\n• Vercel Analytics – per analisi statistiche anonime del traffico (non utilizza cookie e rispetta la privacy degli utenti)\n• Google reCAPTCHA – per la protezione anti-spam dei moduli\n\nPuoi gestire le preferenze sui cookie tramite le impostazioni del tuo browser."
     },
     "changes": {
       "title": "9. Modifiche all'informativa",
