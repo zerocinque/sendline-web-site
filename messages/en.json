@@ -304,11 +304,11 @@
     },
     "dataCollected": {
       "title": "2. Personal Data Collected",
-      "content": "Through the contact forms on this website, we collect: name, email address, and the content of your message. Optionally: project type and estimated budget. We also collect technical data such as IP address, browser type, operating system and pages visited, through server logs and Vercel Analytics (a statistical analysis service that does not use cookies and processes data in anonymous and aggregated form). For anti-spam protection of contact forms, we use Google reCAPTCHA, which may collect technical browsing data."
+      "content": "Through the contact forms on this website, we collect: name, email address, and the content of your message. Optionally: project type and estimated budget. We also collect technical data such as IP address, browser type, operating system and pages visited, through server logs and Vercel Analytics (a statistical analysis service that does not use cookies and processes data in anonymous and aggregated form). For anti-spam protection of contact forms, we use Cloudflare Turnstile, a privacy-friendly service that does not use profiling cookies."
     },
     "purposes": {
       "title": "3. Purpose of Data Processing",
-      "content": "Personal data is processed for the following purposes:\n• Responding to contact requests and providing information about our services\n• Managing pre-contractual relationships\n• Anonymous statistical analysis of website traffic (Vercel Analytics)\n• Anti-spam protection for contact forms (Google reCAPTCHA)"
+      "content": "Personal data is processed for the following purposes:\n• Responding to contact requests and providing information about our services\n• Managing pre-contractual relationships\n• Anonymous statistical analysis of website traffic (Vercel Analytics)\n• Anti-spam protection for contact forms (Cloudflare Turnstile)"
     },
     "legalBasis": {
       "title": "4. Legal Basis for Processing",
@@ -320,7 +320,7 @@
     },
     "sharing": {
       "title": "6. Data Sharing",
-      "content": "Personal data is not sold to third parties. It may be shared with the following service providers, necessary for the operation of the website:\n• Vercel Inc. (USA) - website hosting and anonymous analytics. Data may be transferred to the USA based on the EU-US Data Privacy Framework and Standard Contractual Clauses (SCC). Privacy policy: https://vercel.com/legal/privacy-policy\n• Google LLC (USA) - reCAPTCHA anti-spam protection service. Data may be transferred to the USA based on the EU-US Data Privacy Framework and Standard Contractual Clauses (SCC). Privacy policy: https://policies.google.com/privacy\n• Aruba S.p.a. - for receiving and managing contact emails. Privacy policy: https://www.aruba.it/documents/tc-files/it/11_it_privacy_policy_aruba_spa.aspx"
+      "content": "Personal data is not sold to third parties. It may be shared with the following service providers, necessary for the operation of the website:\n• Vercel Inc. (USA) - website hosting and anonymous analytics. Data may be transferred to the USA based on the EU-US Data Privacy Framework and Standard Contractual Clauses (SCC). Privacy policy: https://vercel.com/legal/privacy-policy\n• Cloudflare Inc. (USA) - Turnstile anti-spam protection service. Data may be transferred to the USA based on the EU-US Data Privacy Framework and Standard Contractual Clauses (SCC). Privacy policy: https://www.cloudflare.com/privacypolicy/\n• Aruba S.p.a. - for receiving and managing contact emails. Privacy policy: https://www.aruba.it/documents/tc-files/it/11_it_privacy_policy_aruba_spa.aspx"
     },
     "rights": {
       "title": "7. Your Rights",
@@ -328,7 +328,7 @@
     },
     "cookies": {
       "title": "8. Cookies and Tracking Technologies",
-      "content": "This website uses the following technologies:\nTechnical cookies — necessary for the proper functioning of the website. They do not require user consent and cannot be disabled. They include session cookies and browsing preferences (e.g. selected language).\nVercel Analytics — a statistical traffic analysis service that does not use cookies, does not collect personally identifiable data, and processes information in anonymous and aggregated form. It does not require user consent.\nGoogle reCAPTCHA — an anti-spam protection service provided by Google LLC. It may install its own cookies (including _GRECAPTCHA and NID) and collect technical data about the browser and browsing behaviour to distinguish human users from bots. For more information: https://policies.google.com/privacy\nYou can manage cookie preferences through your browser settings. Disabling technical cookies may affect website functionality.\nCloudflare Turnstile — an anti-spam protection service provided by Cloudflare Inc., which does not use profiling cookies and operates in compliance with the GDPR. Privacy policy: https://www.cloudflare.com/privacypolicy/"
+      "content": "This website uses the following technologies:\nTechnical cookies — necessary for the proper functioning of the website. They do not require user consent and cannot be disabled. They include session cookies and browsing preferences (e.g. selected language).\nVercel Analytics — a statistical traffic analysis service that does not use cookies, does not collect personally identifiable data, and processes information in anonymous and aggregated form. It does not require user consent.\nYou can manage cookie preferences through your browser settings. Disabling technical cookies may affect website functionality.\nCloudflare Turnstile — an anti-spam protection service provided by Cloudflare Inc., which does not use profiling cookies and operates in compliance with the GDPR. Privacy policy: https://www.cloudflare.com/privacypolicy/"
     },
     "changes": {
       "title": "9. Changes to This Policy",

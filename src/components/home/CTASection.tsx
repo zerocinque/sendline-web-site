@@ -2,12 +2,18 @@
 
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import TurnstileWidget from "@/components/TurnstileWidget";
 
 export default function CTASection() {
   const t = useTranslations("cta");
   const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,14 +23,10 @@ export default function CTASection() {
     const formData = new FormData(form);
 
     try {
-      const recaptchaToken = await new Promise<string>((resolve, reject) => {
-        window.grecaptcha.ready(() => {
-          window.grecaptcha
-            .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!, { action: "contact" })
-            .then(resolve)
-            .catch(reject);
-        });
-      });
+      if (!turnstileToken) {
+        setStatus("error");
+        return;
+      }
 
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -33,7 +35,7 @@ export default function CTASection() {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
-          recaptchaToken,
+          turnstileToken,
           privacyAccepted: true,
         }),
       });
@@ -126,9 +128,13 @@ export default function CTASection() {
             </label>
           </div>
 
+          <div className="mb-6 flex justify-center">
+            <TurnstileWidget onVerify={handleTurnstileVerify} />
+          </div>
+
           <button
             type="submit"
-            disabled={status === "loading"}
+            disabled={status === "loading" || !turnstileToken}
             className="flex w-full items-center justify-center gap-2 rounded bg-primary py-4 font-mono text-white transition-colors hover:bg-primary-hover disabled:opacity-50"
           >
             <svg

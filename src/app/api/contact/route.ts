@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, message, projectType, budget, recaptchaToken, privacyAccepted } = await req.json();
+    const { name, email, message, projectType, budget, turnstileToken, privacyAccepted } = await req.json();
 
     if (!privacyAccepted) {
       return NextResponse.json(
@@ -12,26 +12,26 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!recaptchaToken) {
+    if (!turnstileToken) {
       return NextResponse.json(
-        { error: "Missing reCAPTCHA token" },
+        { error: "Missing Turnstile token" },
         { status: 400 }
       );
     }
 
-    const recaptchaRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+    const turnstileRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret: process.env.RECAPTCHA_SECRET_KEY!,
-        response: recaptchaToken,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        secret: process.env.TURNSTILE_SECRET_KEY!,
+        response: turnstileToken,
       }),
     });
-    const recaptchaData = await recaptchaRes.json();
+    const turnstileData = await turnstileRes.json();
 
-    if (!recaptchaData.success || recaptchaData.score < 0.5) {
+    if (!turnstileData.success) {
       return NextResponse.json(
-        { error: "reCAPTCHA verification failed" },
+        { error: "Turnstile verification failed" },
         { status: 400 }
       );
     }

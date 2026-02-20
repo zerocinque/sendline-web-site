@@ -2,7 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import TurnstileWidget from "@/components/TurnstileWidget";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -16,25 +17,26 @@ export default function ContactPage() {
   });
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
 
     try {
-      const recaptchaToken = await new Promise<string>((resolve, reject) => {
-        window.grecaptcha.ready(() => {
-          window.grecaptcha
-            .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!, { action: "contact" })
-            .then(resolve)
-            .catch(reject);
-        });
-      });
+      if (!turnstileToken) {
+        setStatus("error");
+        return;
+      }
 
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken, privacyAccepted }),
+        body: JSON.stringify({ ...formData, turnstileToken, privacyAccepted }),
       });
 
       if (!res.ok) throw new Error();
@@ -329,6 +331,10 @@ export default function ContactPage() {
                     })}
                   </span>
                 </label>
+
+                <div className="flex justify-center">
+                  <TurnstileWidget onVerify={handleTurnstileVerify} />
+                </div>
               </div>
 
               <div className="mt-8 flex items-center justify-between">
@@ -345,7 +351,7 @@ export default function ContactPage() {
                 {status !== "success" && status !== "error" && <div />}
                 <button
                   type="submit"
-                  disabled={status === "loading"}
+                  disabled={status === "loading" || !turnstileToken}
                   className="inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3 font-mono text-sm font-medium text-white transition-colors hover:bg-primary-hover disabled:opacity-50"
                 >
                   {status === "loading" ? t("form.sending") : t("form.submit")} ▶
