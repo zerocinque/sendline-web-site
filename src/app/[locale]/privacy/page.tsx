@@ -71,7 +71,7 @@ export default function PrivacyPage() {
           </div>
 
           {/* 8. Cookie */}
-          <div>
+          <div id="cookies">
             <h2 className="mb-3 text-lg font-semibold text-white">
               {t("cookies.title")}
             </h2>

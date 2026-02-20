@@ -95,12 +95,12 @@ export default function Footer() {
             >
               {t("privacy")}
             </Link>
-            {/* <Link
-              href="#"
+            <Link
+              href="/privacy#cookies"
               className="text-xs text-muted transition-colors hover:text-foreground"
             >
-              {t("terms")}
-            </Link> */}
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>
