@@ -5,7 +5,7 @@ import AboutSection from "@/components/home/AboutSection";
 import HowIWork from "@/components/home/HowIWork";
 import Specializations from "@/components/home/Specializations";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
-import Stats from "@/components/home/Stats";
+// import Stats from "@/components/home/Stats";
 import FAQ from "@/components/home/FAQ";
 import CTASection from "@/components/home/CTASection";
 
@@ -18,7 +18,7 @@ export default function HomePage() {
       <AboutSection />
       <HowIWork />
       <FeaturedProjects />
-      <Stats />
+      {/* <Stats /> */}
       <FAQ />
       <CTASection />
     </>
