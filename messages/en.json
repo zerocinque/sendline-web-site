@@ -114,7 +114,7 @@
       "supplychain": {
         "title": "B2B Order Portal",
         "description": "Web platform for collecting customer orders with automatic ERP integration. Sector: distribution.",
-        "tags": "DotNetCore,Vuejs,Docker,MongoDB,Restful API integration"
+        "tags": ".NET Core,Vue.js,Docker,MongoDB,Restful API integration"
       },
       "crm": {
         "title": "AI Chatbot on Knowledge Base",
@@ -184,7 +184,7 @@
     "description": "Custom software, automations, and IoT for your business",
     "quickLinks": "Quick Links",
     "connect": "Connect",
-    "rights": "All protocols reserved.",
+    "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
