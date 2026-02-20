@@ -325,5 +325,10 @@
       "title": "9. Modifiche all'informativa",
       "content": "Il Titolare si riserva il diritto di modificare la presente informativa in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento."
     }
+  },
+  "cookieBanner": {
+    "message": "Questo sito utilizza cookie tecnici e strumenti di analisi per migliorare la tua esperienza. Per maggiori informazioni, consulta la nostra <privacyLink>Informativa sulla Privacy</privacyLink>.",
+    "accept": "Accetta",
+    "reject": "Rifiuta"
   }
 }

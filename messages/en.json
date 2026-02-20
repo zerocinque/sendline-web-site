@@ -334,5 +334,10 @@
       "title": "9. Changes to This Policy",
       "content": "The Controller reserves the right to modify this privacy policy at any time. Changes will be published on this page with the date of the last update."
     }
+  },
+  "cookieBanner": {
+    "message": "This website uses technical cookies and analytics tools to improve your experience. For more information, see our <privacyLink>Privacy Policy</privacyLink>.",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }

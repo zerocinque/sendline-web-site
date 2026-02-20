@@ -4,12 +4,13 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/react";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DotGrid from "@/components/DotGrid";
+import ConditionalAnalytics from "@/components/ConditionalAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600", "700"],
@@ -40,7 +41,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={ibmPlexMono.className}>
-        <Analytics />
+        <ConditionalAnalytics />
         <Script
           src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
           strategy="afterInteractive"
@@ -64,6 +65,7 @@ export default async function LocaleLayout({
             <main>{children}</main>
             <Footer />
           </div>
+          <CookieBanner />
         </NextIntlClientProvider>
       </body>
     </html>
