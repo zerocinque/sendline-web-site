@@ -82,9 +82,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
-          <p className="text-xs text-muted">
-            &copy; 2026 Bottasso Luigi di Luigi Bottasso. {t("rights")}
-          </p>
+          <div className="text-xs text-muted">
+            <p>&copy; 2026 Bottasso Luigi di Luigi Bottasso. {t("rights")}</p>
+            <p className="mt-1">
+              Via Rabaiot n.4 – 12030 Lagnasco (CN) | P.IVA 04199610041 | C.F. BTTLGU95C05I470S | REA CN-343100
+            </p>
+          </div>
           <div className="flex gap-6">
             <Link
               href="/privacy"

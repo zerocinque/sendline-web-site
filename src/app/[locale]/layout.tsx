@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SendLine - Architecting Digital Intelligence",
+  title: "SendLine - Software su misura, Automazione AI e IoT",
   description:
     "High-performance white-label solutions, AI automation, and IoT architectures.",
 };
