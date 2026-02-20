@@ -1,10 +1,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useState } from "react";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +14,7 @@ export default function ContactPage() {
     budget: "",
     message: "",
   });
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -31,12 +34,13 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken }),
+        body: JSON.stringify({ ...formData, recaptchaToken, privacyAccepted }),
       });
 
       if (!res.ok) throw new Error();
       setStatus("success");
       setFormData({ name: "", email: "", projectType: "", budget: "", message: "" });
+      setPrivacyAccepted(false);
     } catch {
       setStatus("error");
     }
@@ -301,6 +305,30 @@ export default function ContactPage() {
                   }
                   className="w-full resize-none border-b border-border bg-transparent px-0 py-3 text-sm text-white placeholder-muted outline-none transition-colors focus:border-primary"
                 />
+
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    required
+                    checked={privacyAccepted}
+                    onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                    className="mt-1 h-4 w-4 shrink-0 accent-primary"
+                  />
+                  <span className="text-xs text-muted leading-relaxed">
+                    {t.rich("form.privacy", {
+                      privacyLink: (chunks) => (
+                        <a
+                          href={`/${locale}/privacy`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary underline hover:text-primary-hover"
+                        >
+                          {chunks}
+                        </a>
+                      ),
+                    })}
+                  </span>
+                </label>
               </div>
 
               <div className="mt-8 flex items-center justify-between">

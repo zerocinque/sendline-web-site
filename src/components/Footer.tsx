@@ -87,7 +87,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <Link
-              href="#"
+              href="/privacy"
               className="text-xs text-muted transition-colors hover:text-foreground"
             >
               {t("privacy")}

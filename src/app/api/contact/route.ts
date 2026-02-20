@@ -3,7 +3,14 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, message, projectType, budget, recaptchaToken } = await req.json();
+    const { name, email, message, projectType, budget, recaptchaToken, privacyAccepted } = await req.json();
+
+    if (!privacyAccepted) {
+      return NextResponse.json(
+        { error: "Privacy consent is required" },
+        { status: 400 }
+      );
+    }
 
     if (!recaptchaToken) {
       return NextResponse.json(

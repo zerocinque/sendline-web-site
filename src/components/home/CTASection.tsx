@@ -1,10 +1,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useState } from "react";
 
 export default function CTASection() {
   const t = useTranslations("cta");
+  const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,6 +34,7 @@ export default function CTASection() {
           email: formData.get("email"),
           message: formData.get("message"),
           recaptchaToken,
+          privacyAccepted: true,
         }),
       });
 
@@ -97,6 +100,30 @@ export default function CTASection() {
               placeholder={t("messagePlaceholder")}
               className="h-32 w-full rounded border border-border bg-background p-3 font-mono text-white placeholder-gray-700 outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
             />
+          </div>
+
+          <div className="mb-6">
+            <label className="flex items-start gap-3 cursor-pointer">
+              <input
+                type="checkbox"
+                required
+                className="mt-1 h-4 w-4 shrink-0 accent-primary"
+              />
+              <span className="text-xs text-muted leading-relaxed">
+                {t.rich("privacy", {
+                  privacyLink: (chunks) => (
+                    <a
+                      href={`/${locale}/privacy`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary underline hover:text-primary-hover"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                })}
+              </span>
+            </label>
           </div>
 
           <button

@@ -174,7 +174,10 @@
     "button": "Send message",
     "sending": "Sending...",
     "success": "Message sent! I'll get back to you soon.",
-    "error": "Failed to send. Please try again or email luigi@sendline.it."
+    "error": "Failed to send. Please try again or email luigi@sendline.it.",
+    "privacy": "I have read the <privacyLink>Privacy Policy</privacyLink> and consent to the processing of my personal data in accordance with EU Regulation 2016/679 (GDPR).",
+    "privacyLink": "Privacy Policy",
+    "privacyRequired": "You must accept the privacy policy to send the message."
   },
   "footer": {
     "company": "SendLine",
@@ -287,7 +290,49 @@
         "medium": "€5,000 - €15,000",
         "large": "€15,000 - €50,000",
         "enterprise": "> €50,000"
-      }
+      },
+      "privacy": "I have read the <privacyLink>Privacy Policy</privacyLink> and consent to the processing of my personal data in accordance with EU Regulation 2016/679 (GDPR).",
+      "privacyRequired": "You must accept the privacy policy to send the message."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 19, 2025",
+    "controller": {
+      "title": "1. Data Controller",
+      "content": "The Data Controller is:\nLuigi Bottasso – SendLine\nEmail: luigi@sendline.it\nPhone: +39 329 158 0729"
+    },
+    "dataCollected": {
+      "title": "2. Personal Data Collected",
+      "content": "Through the contact forms on this website, we collect: name, email address, and the content of your message. Optionally: project type and estimated budget. We also collect technical data through Google Analytics (anonymous browsing data) and Google reCAPTCHA (for anti-spam protection)."
+    },
+    "purposes": {
+      "title": "3. Purpose of Data Processing",
+      "content": "Personal data is processed for the following purposes:\n• Responding to contact requests and providing information about our services\n• Managing pre-contractual relationships\n• Anonymous statistical analysis of website traffic (Google Analytics)\n• Anti-spam protection for contact forms (Google reCAPTCHA)"
+    },
+    "legalBasis": {
+      "title": "4. Legal Basis for Processing",
+      "content": "Data processing is based on the consent of the data subject (Art. 6(1)(a) GDPR), expressed by completing and submitting the contact form, and on the legitimate interest of the Controller for anti-spam protection (Art. 6(1)(f) GDPR)."
+    },
+    "retention": {
+      "title": "5. Data Retention Period",
+      "content": "Personal data collected through contact forms is retained for the time necessary to manage the request and for a maximum of 24 months from collection, unless legal obligations require longer retention."
+    },
+    "sharing": {
+      "title": "6. Data Sharing",
+      "content": "Personal data is not sold to third parties. It may be shared with:\n• Google LLC – for Analytics and reCAPTCHA services (data may be transferred to the USA based on Standard Contractual Clauses)\n• Hosting and email service providers – necessary for service delivery"
+    },
+    "rights": {
+      "title": "7. Your Rights",
+      "content": "Under Articles 15-22 of the GDPR, you have the right to:\n• Access your personal data\n• Request rectification or deletion of your data\n• Restrict or object to processing\n• Request data portability\n• Withdraw consent at any time\n• Lodge a complaint with the Italian Data Protection Authority (Garante per la Protezione dei Dati Personali – www.garanteprivacy.it)\n\nTo exercise your rights, contact: luigi@sendline.it"
+    },
+    "cookies": {
+      "title": "8. Cookies and Tracking Technologies",
+      "content": "This website uses:\n• Technical cookies – necessary for website functionality\n• Google Analytics – for anonymous statistical traffic analysis\n• Google reCAPTCHA – for anti-spam protection of forms\n\nYou can manage cookie preferences through your browser settings."
+    },
+    "changes": {
+      "title": "9. Changes to This Policy",
+      "content": "The Controller reserves the right to modify this privacy policy at any time. Changes will be published on this page with the date of the last update."
     }
   }
 }

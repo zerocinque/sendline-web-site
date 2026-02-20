@@ -174,7 +174,10 @@
     "button": "Invia messaggio",
     "sending": "Invio in corso...",
     "success": "Messaggio inviato! Ti risponderò al più presto.",
-    "error": "Errore nell'invio. Riprova o scrivi a luigi@sendline.it."
+    "error": "Errore nell'invio. Riprova o scrivi a luigi@sendline.it.",
+    "privacy": "Ho letto l''<privacyLink>Informativa sulla Privacy</privacyLink> e acconsento al trattamento dei miei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
+    "privacyLink": "Informativa sulla Privacy",
+    "privacyRequired": "Devi accettare l'informativa sulla privacy per inviare il messaggio."
   },
   "footer": {
     "company": "SendLine",
@@ -278,7 +281,49 @@
         "medium": "€5.000 - €15.000",
         "large": "€15.000 - €50.000",
         "enterprise": "> €50.000"
-      }
+      },
+      "privacy": "Ho letto l''<privacyLink>Informativa sulla Privacy</privacyLink> e acconsento al trattamento dei miei dati personali ai sensi del Regolamento UE 2016/679 (GDPR).",
+      "privacyRequired": "Devi accettare l'informativa sulla privacy per inviare il messaggio."
+    }
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: 19 febbraio 2025",
+    "controller": {
+      "title": "1. Titolare del trattamento",
+      "content": "Il Titolare del trattamento dei dati è:\nLuigi Bottasso – SendLine\nEmail: luigi@sendline.it\nTelefono: +39 329 158 0729"
+    },
+    "dataCollected": {
+      "title": "2. Dati personali raccolti",
+      "content": "Attraverso i moduli di contatto presenti sul sito raccogliamo: nome, indirizzo email, e il contenuto del messaggio inviato. Facoltativamente: tipo di progetto e budget indicativo. Raccogliamo inoltre dati tecnici tramite Google Analytics (dati di navigazione anonimi) e Google reCAPTCHA (per la protezione anti-spam)."
+    },
+    "purposes": {
+      "title": "3. Finalità del trattamento",
+      "content": "I dati personali vengono trattati per le seguenti finalità:\n• Rispondere alle richieste di contatto e fornire informazioni sui servizi offerti\n• Gestire eventuali rapporti pre-contrattuali\n• Analisi statistiche anonime sul traffico del sito (Google Analytics)\n• Protezione anti-spam dei moduli di contatto (Google reCAPTCHA)"
+    },
+    "legalBasis": {
+      "title": "4. Base giuridica del trattamento",
+      "content": "Il trattamento dei dati si basa sul consenso dell'interessato (art. 6, par. 1, lett. a del GDPR), espresso tramite la compilazione e l'invio del modulo di contatto, e sull'interesse legittimo del Titolare alla protezione anti-spam (art. 6, par. 1, lett. f del GDPR)."
+    },
+    "retention": {
+      "title": "5. Durata della conservazione",
+      "content": "I dati personali raccolti tramite i moduli di contatto vengono conservati per il tempo necessario a gestire la richiesta e per un massimo di 24 mesi dalla raccolta, salvo obblighi di legge che ne richiedano una conservazione più lunga."
+    },
+    "sharing": {
+      "title": "6. Condivisione dei dati",
+      "content": "I dati personali non vengono venduti a terzi. Possono essere condivisi con:\n• Google LLC – per i servizi Analytics e reCAPTCHA (i dati possono essere trasferiti negli USA sulla base delle Clausole Contrattuali Standard)\n• Provider di hosting e servizi email – necessari per l'erogazione del servizio"
+    },
+    "rights": {
+      "title": "7. Diritti dell'interessato",
+      "content": "Ai sensi degli artt. 15-22 del GDPR, hai diritto di:\n• Accedere ai tuoi dati personali\n• Richiedere la rettifica o la cancellazione dei dati\n• Limitare o opporti al trattamento\n• Richiedere la portabilità dei dati\n• Revocare il consenso in qualsiasi momento\n• Proporre reclamo al Garante per la Protezione dei Dati Personali (www.garanteprivacy.it)\n\nPer esercitare i tuoi diritti, scrivi a: luigi@sendline.it"
+    },
+    "cookies": {
+      "title": "8. Cookie e tecnologie di tracciamento",
+      "content": "Il sito utilizza:\n• Cookie tecnici – necessari per il funzionamento del sito\n• Google Analytics – per analisi statistiche anonime del traffico\n• Google reCAPTCHA – per la protezione anti-spam dei moduli\n\nPuoi gestire le preferenze sui cookie tramite le impostazioni del tuo browser."
+    },
+    "changes": {
+      "title": "9. Modifiche all'informativa",
+      "content": "Il Titolare si riserva il diritto di modificare la presente informativa in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento."
     }
   }
 }
