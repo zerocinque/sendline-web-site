@@ -1,4 +1,45 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "sendline.it"}`;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  const title =
+    locale === "it" ? "Informativa sulla Privacy" : "Privacy Policy";
+  const description =
+    locale === "it"
+      ? "Informativa sulla privacy di SendLine ai sensi del GDPR. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali."
+      : "SendLine privacy policy under GDPR. How we collect, use, and protect your personal data.";
+
+  return {
+    title,
+    description,
+    robots: {
+      index: false,
+      follow: true,
+    },
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/privacy`,
+      languages: {
+        it: `${BASE_URL}/it/privacy`,
+        en: `${BASE_URL}/en/privacy`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${BASE_URL}/${locale}/privacy`,
+    },
+  };
+}
 
 export default function PrivacyPage() {
   const t = useTranslations("privacy");
